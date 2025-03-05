@@ -4,8 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Application Details</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/sidebar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <h1>Application Details</h1>
+    <!-- Tambahkan container untuk sidebar -->
+  
+    <aside class="sidebar">
+      <!-- Logo Section -->
+      <section class="logo-section">
+          <div class="logo">LOGO</div>
+      </section>
+      
+      <!-- Apps Menu Section -->
+      <section class="menu-section">
+          <h3>Apps</h3>
+          <ul class="menu-list">
+              <li>
+                  <a href="#" class="menu-item">
+                    <img src="./assets/img/myApp-Icon.png" class="menu-icon" alt="My Applications Icon">
+                      <span>My Applications</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="menu-item">
+                    <img src="./assets/img/myApp-Icon.png" class="menu-icon" alt="My Applications Icon">
+                      <span>AI Interviews</span>
+                  </a>
+              </li>
+          </ul>
+      </section>
+  
+      <!-- User Menu Section -->
+      <section class="menu-section">
+          <h3>User</h3>
+          <ul class="menu-list">
+              <li>
+                  <a href="#" class="menu-item">
+                    <img src="./assets/img/myApp-Icon.png" class="menu-icon" alt="My Applications Icon">
+                      <span>Profile</span>
+                      <span class="menu-shortcut">⌘P</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="menu-item">
+                    <img src="./assets/img/myApp-Icon.png" class="menu-icon" alt="My Applications Icon">
+                      <span>Billing</span>
+                      <span class="menu-shortcut">⌘B</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="#" class="menu-item">
+                    <img src="./assets/img/myApp-Icon.png" class="menu-icon" alt="My Applications Icon">
+                      <span>Settings</span>
+                      <span class="menu-shortcut">⌘S</span>
+                  </a>
+              </li>
+          </ul>
+      </section>
+  
+      <!-- User Profile Section -->
+      <section class="user-profile-section">
+          <div class="user-profile">
+              <img src="./assets/img/company-logo.png" alt="User Avatar" class="user-avatar">
+              <div class="user-info">
+                  <h4 class="user-name">Budi Bedu Beda</h4>
+                  <p class="user-email">budibedubeda@gmail.com</p>
+              </div>
+              <button class="logout-btn">Logout</button>
+          </div>
+      </section>
+  </aside>
+  
+  <main>
+    <h1>Application Details</h1>
+  </main>
+  
+
+
 </body>
 </html>

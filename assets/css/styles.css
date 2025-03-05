@@ -1,0 +1,29 @@
+/* Layout utama */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+main {
+    margin-left: 250px;  /* Sesuai dengan lebar sidebar */
+    padding: 20px;
+    width: calc(100% - 250px); /* Lebar penuh dikurangi sidebar */
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Optional: memberikan background berbeda */
+}
+
+/* Style untuk heading */
+h1 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Container untuk konten */
+.content-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+} 

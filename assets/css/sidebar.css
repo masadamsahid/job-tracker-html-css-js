@@ -1,0 +1,137 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    border-right: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+/* Logo Section */
+.logo-section {
+    padding: 20px;
+}
+
+.logo {
+    color: #4CAF50;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menu Sections */
+.menu-section {
+    padding: 0 12px;
+    margin-bottom: 24px;
+}
+
+.menu-section h3 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    padding: 0 12px;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 6px;
+}
+
+.menu-item:hover {
+    background-color: #20b20c;
+}
+
+
+
+.menu-item span {
+    flex: 1;
+}
+
+.menu-shortcut {
+    margin-left: auto;
+    color: #999;
+    font-size: 12px;
+}
+
+/* User Profile Section */
+.user-profile-section {
+    margin-top: auto;
+    padding: 12px;
+    border-top: 1px solid #eee;
+}
+
+.user-profile {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.user-info {
+    margin-bottom: 12px;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.user-email {
+    font-size: 12px;
+    color: #666;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+    background-color: #f5f5f5;
+}
+
+/* Active Menu Item */
+.menu-item.active {
+    background-color: #e8f5e9;
+    color: #4CAF50;
+}
+
+.menu-icon {
+    width: 20px;  /* sesuaikan ukuran */
+    height: 20px;
+    margin-right: 12px;
+    object-fit: contain; /* menjaga aspek ratio gambar */
+}
+
+/* Untuk item yang aktif/terpilih */
+/* .menu-item.active {
+    background-color: #4CAF50;
+    color: white;
+} */
