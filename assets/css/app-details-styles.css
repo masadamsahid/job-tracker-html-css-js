@@ -1,0 +1,354 @@
+/* Layout utama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffffff;
+}
+
+/* Container untuk layout */
+.container {
+    display: grid;
+    grid-template-areas: "sidebar content-container content-side";
+    grid-template-columns: 18% 57% 25%; 
+    min-height: 1024px;
+    gap: 0;
+    padding: 0;
+    background: #FFFFFF;
+}
+
+/* Area Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E7;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+    height: 1024px;
+    padding: 12px;
+    position: fixed;
+    width: auto;
+    z-index: 10;
+}
+
+/* Area Konten Utama */
+.content-container {
+    grid-area: content-container;
+    padding: 0px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: 20px;
+    height:fit-content;
+}
+
+/* Area Sidebar Kanan */
+.content-side {
+    grid-area: content-side;
+    width: auto;
+    height: auto;
+    padding: 24px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E7;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .container {
+        grid-template-areas: 
+            "sidebar content-container"
+            "sidebar content-side";
+        grid-template-columns: 250px 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+            "sidebar"
+            "content-container"
+            "content-side";
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+    
+    .content-container {
+        margin-left: 0;
+    }
+}
+
+/* Style untuk heading */
+h1 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Job Header Card */
+.job-header-card {
+    box-sizing: border-box;
+    padding: 24px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E7;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.company-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.logo-title {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.company-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.title-section h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #09090B;
+    margin: 0;
+}
+
+.job-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #16A249;
+    margin: 0;
+}
+
+.job-meta {
+    font-size: 14px;
+    color: #71717A;
+    margin: 0;
+}
+
+.btn-more {
+    background: none;
+    border: none;
+    color: #71717A;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.btn-more:hover {
+    background-color: #F4F4F5;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    padding-top: 24px;
+    border-top: 1px solid #E4E4E7;
+}
+
+.btn-primary {
+    padding: 8px 16px;
+    background: #16A249;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background: #138a3d;
+}
+
+
+.btn-secondary {
+    padding: 8px 16px;
+    background: #FFFFFF;
+    color: #09090B;
+    border: 1px solid #E4E4E7;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-secondary:hover{
+    background-color: #f5f5f5;
+    border-color: #ccc;
+}
+
+/* Job Description Card */
+.job-description-card {
+    box-sizing: border-box;
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E7;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.job-description-card h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #09090B;
+    margin-bottom: 16px;
+}
+
+.description-content {
+    font-size: 14px;
+    line-height: 17px;
+    color: #334155;
+}
+
+
+/* List Styles */
+.description-content ul {
+    margin-top: 16px;
+    padding-left: 20px;
+}
+
+.description-content li {
+    margin-bottom: 8px;
+}
+
+/* Dropdown btn-more styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 200px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E7;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 8px 0;
+    display: none;
+    z-index: 100;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: #09090B;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #F4F4F5;
+}
+
+/* Content Side Styling */
+.side-header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #09090B;
+    margin-bottom: 24px;
+}
+
+.snapshot-section {
+    margin-bottom: 32px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.section-header .icon {
+    font-size: 18px;
+}
+
+.section-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #09090B;
+    margin: 0;
+}
+
+.snapshot-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+.snapshot-list li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #334155;
+}
+
+.snapshot-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #71717A;
+}
+
+.additional-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #334155;
+    margin: 16px 0;
+}
+
+.btn-regenerate {
+    width: 100%;
+    padding: 8px 16px;
+    background: #16A249;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-regenerate:hover {
+    background: #138a3d;
+}
+
