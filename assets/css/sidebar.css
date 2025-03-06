@@ -9,6 +9,32 @@
     padding: 5px;
 }
 
+/* Sembunyikan sidebar pada resolusi kurang dari 768px */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Sembunyikan sidebar */
+    }
+
+    .sidebar-toggle {
+        display: block; /* Tampilkan ikon hamburger */
+        cursor: pointer; /* Menunjukkan bahwa ini dapat diklik */
+        padding: 10px; /* Tambahkan padding jika diperlukan */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 20; /* Pastikan ikon di atas elemen lain */
+        background: #16A249; /* Warna latar belakang ikon */
+        color: white; /* Warna ikon */
+        border-radius: 4px;
+    }
+    .sidebar-toggle i {
+        font-size: 24px; /* Ukuran ikon */
+    }
+
+}
+
+
+
 /* Logo Section */
 .logo-section {
     padding: 20px;
