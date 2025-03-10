@@ -25,10 +25,24 @@ body {
     padding: 20px;
     background: #FFFFFF;
     margin: 0;
-    height:auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
 }
+
+.left-panel > div {
+    margin-bottom: 70px;
+}
+
+.left-panel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
 
 .illustration {
     max-width: 100%;
@@ -91,11 +105,14 @@ input {
     font-size: 16px;
 }
 
+.btn-login:hover {
+    background: #138a3d;
+}
 .btn-github {
     width: 100%;
     padding: 12px;
-    background-color: #333;
-    color: white;
+    background-color: white; /* Warna tombol Github */
+    color: #333;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -104,6 +121,9 @@ input {
     align-items: center;
     justify-content: center;
     gap: 5px;
+}
+.btn-github:hover {
+    background: #F4F4F5;
 }
 
 .or {
@@ -115,10 +135,10 @@ input {
 }
 
 .register-link {
-    margin-top: 20px;
+    margin-bottom: 100px;
     text-align: right;
     height:fit-content;
-    padding: 40px;
+    padding: 20px;
     justify-content: right;
     align-items: right;
     flex-direction: column;
@@ -140,4 +160,117 @@ blockquote {
     color: #666;
     border-left: 4px solid #16A249;
     padding-left: 20px;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .left-panel {
+        padding: 15px; /* Mengurangi padding */
+    }
+
+    .right-panel {
+        padding: 30px; /* Mengurangi padding */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+
+    .container {
+        display: flex; /* Pastikan container tetap flex */
+        flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    }
+
+    .right-panel {
+        width: 100%; /* Lebar right-panel 100% */
+        padding: 20px; /* Padding untuk right-panel */
+        text-align: center; /* Rata tengah untuk teks */
+    }
+
+    .left-panel-content {
+        display: flex; /* Menggunakan flexbox untuk konten */
+        flex-direction: column; /* Mengatur arah flex menjadi kolom */
+        align-items: center; /* Rata tengah untuk konten */
+        gap: 0; /* Jarak antara elemen */
+    }
+
+    .illustration {
+        max-width: 100%; /* Memastikan gambar responsif */
+        height: auto; /* Menjaga rasio aspek */
+    }
+
+    blockquote {
+        margin-top: 0; /* Jarak atas untuk kutipan */
+        padding: 15px; /* Padding untuk kutipan */
+        border-left: 4px solid #16A249; /* Garis samping */
+        font-style: italic;
+        color: #333;
+        text-align: center; /* Rata tengah untuk teks kutipan */
+        font-size: 14px; /* Ukuran font untuk kutipan */
+    }
+
+    .logo {
+        font-size: 24px; /* Ukuran font untuk logo */
+        margin-bottom: 20px; /* Jarak bawah untuk logo */
+    }
+
+    h2 {
+        font-size: 20px; /* Ukuran font untuk judul */
+        margin-bottom: 10px; /* Jarak bawah untuk judul */
+    }
+
+    p {
+        font-size: 14px; /* Ukuran font untuk teks */
+        margin-bottom: 20px; /* Jarak bawah untuk teks */
+    }
+
+    input {
+        width: 100%; /* Lebar input 100% */
+        padding: 12px; /* Padding untuk input */
+        margin-bottom: 20px; /* Jarak bawah untuk input */
+        border: 1px solid #ccc; /* Border untuk input */
+        border-radius: 4px; /* Sudut melengkung untuk input */
+    }
+
+    button {
+        width: 100%; /* Lebar tombol 100% */
+        padding: 12px; /* Padding untuk tombol */
+        background-color: #16A249; /* Warna tombol */
+        color: white; /* Warna teks tombol */
+        border: none; /* Tanpa border */
+        border-radius: 4px; /* Sudut melengkung untuk tombol */
+        cursor: pointer; /* Kursor pointer saat hover */
+        font-size: 16px; /* Ukuran font untuk tombol */
+    }
+
+
+
+    .github-btn {
+        width: 100%; /* Lebar tombol Github 100% */
+        padding: 12px; /* Padding untuk tombol Github */
+        background-color: white; /* Warna tombol Github */
+        color: #333; /* Warna teks tombol Github */
+        border: none; /* Tanpa border */
+        border-radius: 4px; /* Sudut melengkung untuk tombol Github */
+        cursor: pointer; /* Kursor pointer saat hover */
+        display: flex; /* Menggunakan flexbox untuk tombol Github */
+        align-items: center; /* Rata tengah untuk ikon dan teks */
+        justify-content: center; /* Rata tengah untuk ikon dan teks */
+    }
+
+    .footer-text {
+        margin-top: 20px; /* Jarak atas untuk footer text */
+        font-size: 12px; /* Ukuran font untuk footer text */
+        color: #666; /* Warna footer text */
+    }
+
+    .register-link {
+        margin-top: 10px; /* Jarak atas untuk link register */
+    }
+
+    .register-link a {
+        color: #16A249; /* Warna link register */
+        text-decoration: none; /* Tanpa garis bawah */
+    }
 }
