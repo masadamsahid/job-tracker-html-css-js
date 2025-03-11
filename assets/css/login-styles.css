@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #FFFFFF;
 }
 
 .container {
@@ -63,30 +63,30 @@ body {
     grid-area: right-panel;
     margin: 0;
     height:auto;
-    background-color: #E4E4E7;
+    background-color: #F1F5F9;
 
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #16A249; /* Ganti dengan warna logo */
+    color: #16A249; 
     margin-bottom: 20px;
 }
 .footer-text{
     
     font-weight:lighter;
-    color: #71717A; /* Ganti dengan warna logo */
+    color: #71717A; 
     margin-top: 20px;
 }
 
-p {
+.login-form p {
     color: #666;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-input {
+.placeholder {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -111,7 +111,7 @@ input {
 .btn-github {
     width: 100%;
     padding: 12px;
-    background-color: white; /* Warna tombol Github */
+    background-color: white; 
     color: #333;
     border: none;
     border-radius: 4px;
@@ -145,6 +145,11 @@ input {
     grid-area: right-panel;
 
 }
+
+.register-link a {
+    color: #16A249; 
+    text-decoration: none; 
+}
 .login-form{
     text-align: center;
     height:fit-content;
@@ -154,7 +159,7 @@ input {
     margin: 20px;
 }
 
-blockquote {
+.quote {
     margin-top: 40px;
     font-style: italic;
     color: #666;
@@ -165,11 +170,11 @@ blockquote {
 /* Tablet Styles */
 @media (max-width: 1024px) {
     .left-panel {
-        padding: 15px; /* Mengurangi padding */
+        padding: 15px; 
     }
 
     .right-panel {
-        padding: 30px; /* Mengurangi padding */
+        padding: 30px; 
     }
 }
 
@@ -178,99 +183,93 @@ blockquote {
 
 
     .container {
-        display: flex; /* Pastikan container tetap flex */
-        flex-direction: column; /* Mengatur arah flex menjadi kolom */
+        display: flex; 
+        flex-direction: column;
     }
 
     .right-panel {
-        width: 100%; /* Lebar right-panel 100% */
-        padding: 20px; /* Padding untuk right-panel */
-        text-align: center; /* Rata tengah untuk teks */
+        width: 100%;
+        padding: 20px; 
+        text-align: center; 
     }
 
     .left-panel-content {
-        display: flex; /* Menggunakan flexbox untuk konten */
-        flex-direction: column; /* Mengatur arah flex menjadi kolom */
-        align-items: center; /* Rata tengah untuk konten */
-        gap: 0; /* Jarak antara elemen */
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 0; 
     }
 
     .illustration {
-        max-width: 100%; /* Memastikan gambar responsif */
-        height: auto; /* Menjaga rasio aspek */
+        max-width: 100%; 
+        height: auto;
     }
 
-    blockquote {
-        margin-top: 0; /* Jarak atas untuk kutipan */
-        padding: 15px; /* Padding untuk kutipan */
-        border-left: 4px solid #16A249; /* Garis samping */
+    .quote {
+        margin-top: 0;
+        padding: 15px; 
+        border-left: 4px solid #16A249; 
         font-style: italic;
         color: #333;
-        text-align: center; /* Rata tengah untuk teks kutipan */
-        font-size: 14px; /* Ukuran font untuk kutipan */
+        text-align: center; 
+        font-size: 14px;
     }
 
     .logo {
-        font-size: 24px; /* Ukuran font untuk logo */
-        margin-bottom: 20px; /* Jarak bawah untuk logo */
+        font-size: 24px; 
+        margin-bottom: 20px;
     }
 
-    h2 {
-        font-size: 20px; /* Ukuran font untuk judul */
-        margin-bottom: 10px; /* Jarak bawah untuk judul */
+
+
+    .placeholder {
+        width: 100%; 
+        padding: 12px;
+        margin-bottom: 20px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
     }
 
-    p {
-        font-size: 14px; /* Ukuran font untuk teks */
-        margin-bottom: 20px; /* Jarak bawah untuk teks */
-    }
-
-    input {
-        width: 100%; /* Lebar input 100% */
-        padding: 12px; /* Padding untuk input */
-        margin-bottom: 20px; /* Jarak bawah untuk input */
-        border: 1px solid #ccc; /* Border untuk input */
-        border-radius: 4px; /* Sudut melengkung untuk input */
-    }
-
-    button {
-        width: 100%; /* Lebar tombol 100% */
-        padding: 12px; /* Padding untuk tombol */
-        background-color: #16A249; /* Warna tombol */
-        color: white; /* Warna teks tombol */
-        border: none; /* Tanpa border */
-        border-radius: 4px; /* Sudut melengkung untuk tombol */
-        cursor: pointer; /* Kursor pointer saat hover */
-        font-size: 16px; /* Ukuran font untuk tombol */
+    .btn-login  {
+        width: 100%; 
+        padding: 12px; 
+        background-color: #16A249; 
+        color: white; 
+        border: none; 
+        border-radius: 4px; 
+        cursor: pointer; 
+        font-size: 14px; 
     }
 
 
 
     .github-btn {
-        width: 100%; /* Lebar tombol Github 100% */
-        padding: 12px; /* Padding untuk tombol Github */
-        background-color: white; /* Warna tombol Github */
-        color: #333; /* Warna teks tombol Github */
-        border: none; /* Tanpa border */
-        border-radius: 4px; /* Sudut melengkung untuk tombol Github */
-        cursor: pointer; /* Kursor pointer saat hover */
-        display: flex; /* Menggunakan flexbox untuk tombol Github */
-        align-items: center; /* Rata tengah untuk ikon dan teks */
-        justify-content: center; /* Rata tengah untuk ikon dan teks */
+        width: 100%; 
+        padding: 12px; 
+        background-color: white; 
+        color: #333; 
+        border: none; 
+        border-radius: 4px; 
+        cursor: pointer; 
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
     }
 
     .footer-text {
-        margin-top: 20px; /* Jarak atas untuk footer text */
-        font-size: 12px; /* Ukuran font untuk footer text */
-        color: #666; /* Warna footer text */
+        margin-top: 20px; 
+    
+        color: #FFFFFF; 
+    }.footer-text p{
+        font-size: 14px;
     }
 
     .register-link {
-        margin-top: 10px; /* Jarak atas untuk link register */
+        margin-top: 10px; 
     }
 
     .register-link a {
-        color: #16A249; /* Warna link register */
-        text-decoration: none; /* Tanpa garis bawah */
+        color: #16A249; 
+        text-decoration: none; 
     }
 }
