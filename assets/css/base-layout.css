@@ -30,6 +30,9 @@ body {
   /* background-color: blue; */
   width: 300px;
 
+  padding: 5px;
+  display: flex;
+
   border-right: 1px solid var(--outline-color);
 
   @media (max-width: 1024px) {
