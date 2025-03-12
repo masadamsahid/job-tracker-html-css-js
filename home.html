@@ -7,47 +7,101 @@
     <link rel="stylesheet" href="assets/css/home.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     </style>
   </head>
   <body>
-    <!-- Navbar -->
-    <section>
-      <nav class="navbar">
-        <div class="container">
-          <div class="hamburger-menu">&#9776;</div>
-              <a href="" class="logo"><h1>LOGO</h1></a>
-              <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Pricing</a></li>
-              </ul>
-              <div class="navbar-button">
-                <button class="sign-up"><a>Sign Up</a></button>
-              </div>
-          </div>
-      </nav>
-      <hr>
-    </section>
+    <header>
+      <!-- Navbar -->
+      <section>
+        <nav class="navbar">
+          <div class="navbar-container">
+            <div class="hamburger-menu">&#9776;</div>
+                <a href="" class="logo"><h1>LOGO</h1></a>
+                <ul class="nav-list">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Pricing</a></li>
+                </ul>
+                <div class="navbar-button">
+                  <button class="sign-up"><a>Sign Up</a></button>
+                </div>
+            </div>
+        </nav>
+        <hr>
+      </section>
+    </header>
 
-    <!-- Hero -->
-    <section>
-      <div class="hero">
-        <div>
-          <img class="hero-image" src="assets/images/4 to 5 people sucessfully get their jobs in an office with green accent color without any text_ 1.png" alt="Hero Image">
+    <main>  
+      <!-- Hero -->
+      <section>
+        <div class="hero">
+          <div class="hero-image">
+            <img class="image" src="assets/images/4 to 5 people sucessfully get their jobs in an office with green accent color without any text_ 1.png" alt="Hero Image">
+          </div>
+          <div class="hero-desc">
+            <div class="hero-title">
+              <span>Jotrack</span>
+            </div>
+            <div class="hero-subtitle">
+              <p>Simplify Your Job Search: AI Interviews & Effortless Application</p>
+            </div>
+            <div class="hero-button">
+              <button>Get Started</button>
+            </div>
+          </div>
         </div>
-        <div class="hero-desc">
-          <div class="hero-title">
-            <span>Jotrack</span>
-          </div>
-          <div class="hero-subtitle">
-            <p>Simplify Your Job Search: AI Interviews & Effortless Application</p>
-          </div>
-          <div class="hero-button">
-            <button>Get Started</button>
+      </section>
+
+      <!-- Achievments Card -->
+      <section>
+        <div class="achievements">
+          <div class="achievements-container">
+            <div class="achievements-card">
+              <div class="achievements-title">
+                <span class="title">Jobs</span>
+                <span id="icon-jobs">Icon</span>
+              </div>
+              <div class="achievements-description">
+                <span>10.7K+</span>
+                <p>have been tracked</p>
+              </div>
+            </div>
+
+            <div class="achievements-card">
+              <div class="achievements-title">
+                <span class="title">AI-Interviews</span>
+                <span id="icon-ai">Icon</span>
+              </div>
+              <div class="achievements-description">
+                <span>500+</span>
+                <p>have been done</p>
+              </div>
+            </div>
+
+            <div class="achievements-card">
+              <div class="achievements-title">
+                <span class="title">People</span>
+                <span id="icon-people">Icon</span>
+              </div>
+              <div class="achievements-description">
+                <span>500+</span>
+                <p>land their dream jobs</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <br>
+      <br>
+      <hr>
+
+      <!-- Review -->
+      <section>
+
+      </section>
+    </main>
+
 
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', () => {
@@ -67,7 +121,6 @@
           }
         });
       })
-
     </script>
   </body>
 </html>
