@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-areas: "left-panel right-panel";
     grid-template-columns: 50% 50%; 
-    min-height: 1024px;
+    min-height: 100vh;
     gap: 0;
     padding: 0;
     background: #FFFFFF;
