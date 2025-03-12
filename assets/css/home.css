@@ -17,6 +17,7 @@ body{
     display: none;
     cursor: pointer;
 }
+
 .logo {
     /* font-size: 48px; */
     font-weight: bold;
@@ -26,6 +27,7 @@ body{
     font-weight: bold;
     color: green;
 }
+
 .nav-list {
     margin: 0;
     display: flex;
@@ -62,14 +64,15 @@ body{
     /* padding: 40px 85px; */
 }
 
-.hero{
+section .hero{
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 83px;
 }
 
-.hero-image img{
+.hero .hero-image img{
     width: 619.64px;
     height: 426px;
 }
@@ -77,7 +80,7 @@ body{
 .hero-desc{
     margin-left: 50px;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     flex-direction: column;
     justify-content: center;
 }
@@ -140,10 +143,10 @@ body{
     font-weight: bold;
 }
 
-.achievements-card .achievements-title .icon{
+/* .achievements-card .achievements-title .icon{
     font-size: 24px;
     font-weight: bold;
-}
+} */
 
 #icon-jobs{
     padding-left: 140px;
@@ -174,22 +177,23 @@ body{
     margin-top: 0px;
 }
 
-.achievements-break{
+section .achievements-break{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 1028px;
 }
 
-.review-main-title{
+section .reviews .review-main-title{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
     font-family: 'Outfit', sans-serif !important;
+    margin-top: 50px;
 }
 
-.review-main-title span{
+.reviews .review-main-title span{
     color: green;
 }
 
@@ -197,16 +201,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 38px;
+    overflow: scroll;
 }
 
 .reviews .reviews-container .review-card{
     width: 360px;
-    height: auto;
+    height: 317px;
     border-radius: 12px;
     border: 2px solid #E4E4E7;
     box-shadow: 0px 1px #E4E4E7;
     margin-top: 53px;
+    overflow: scroll;
 }
 
 .reviews-container .review-card .review-profile{
@@ -245,13 +251,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 0;
+    gap: 0px;
     margin-left: auto;
 }
 
 .review-profile .review-rating p{
     font-size: 20px;
-    margin-left: 90px;
+    /* margin-left: 90px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -280,10 +286,35 @@ body{
     margin: 24px;
 }
 
+section .pricing .pricing-main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 24px;
+    margin-top: 116px;
+}
+
+.pricing .pricing-main-title span{
+    color: green;
+}
+
 @media(max-width: 834px){
+    .navbar-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: center;
+    }
+
     .nav-list{
         font-size: 14px;
+        font-weight: bold;
         gap: 50px;
+    }
+
+    .logo {
+        flex-basis: 100px;
     }
 
     /* .nav-list li{
@@ -291,23 +322,81 @@ body{
         margin-right: 10px;
     } */
 
-    .nav-list li a{
+    /* .nav-list li a{
         padding: 0 25px;
+    } */
+
+    section .hero{
+        width: 100%;
+        margin-top: 53px;
+        /* flex-direction: column; */
     }
 
-    .hero-image img{
+    .hero .hero-image img{
         width: 386px;
         height: 265.38px;
     }
 
+    .hero-button{
+        align-self: flex-start;
+    }
+
     .hero-desc{
-        margin-left: 36px;
+        margin-left: 25px;
     }
 
     .hero-title{
         font-size: 64px;
     }
+
+    .hero-subtitle p{
+        font-size: 16px;
+        /* overflow: scroll; */
+    }
+
+    .achievements{
+        /* margin-top: 53px; */
+        margin-left: 55px;
+        margin-right: 55px;
+    }
     
+    section .achievements-break{
+        width: 732px;
+    }
+
+    .achievements-card .achievements-title span{
+        font-size: 14px;
+    }
+
+    #icon-jobs{
+        padding-left: 97px;
+    }
+    
+    #icon-ai{
+        padding-left: 38px;
+    }
+    
+    #icon-people{
+        padding-left: 84px;
+    }
+
+    .reviews .reviews-container{
+        gap: 26px;
+        margin: 0 25px
+        /* overflow: scroll; */
+    }
+
+    .reviews .reviews-container .review-card{
+        width: 360px;
+        height: 317px;
+        margin-top: 34px;
+        overflow: scroll;
+    }
+
+    .reviews-container .review-card .review-profile{
+        gap: 6px;
+        margin: 12px;
+    }
 }
 
 @media(max-width: 412px) {
@@ -315,10 +404,11 @@ body{
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 3em;
+        top: 3.2em;
         right: 0;
         width: 100%;
         background-color: #212121;
+        color: green;
         text-align: center;
         padding: 10px 0;
         z-index: 10;
@@ -343,5 +433,72 @@ body{
         display: block;
         font-size: 24px;
         cursor: pointer;
+    }
+
+    .hero .hero-image img{
+        width: 356px;
+        height: 244.75px;
+    }
+
+    .hero-subtitle p{
+        font-size: 18px;
+        /* overflow: scroll; */
+    }
+
+    section .hero{
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 27px;
+        margin-top: 31px;
+        flex-direction: column;
+    }
+
+    .hero-title{
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .hero-title span{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-button{
+        align-self: center;
+        margin-bottom: 74px;
+    }
+
+    .achievements .achievements-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .achievements .achievements-container .achievements-card{
+        margin-top: 25.5px;
+    }
+
+    section .reviews .review-main-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 24px;
+        margin-top: 50px;
+        margin-left: 29px;
+        margin-right: 27px;
+    }
+
+    .reviews .reviews-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 38px;
+        overflow: scroll;
+    }
+
+    html{
+        width: 100%;
     }
 }
