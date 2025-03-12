@@ -1,4 +1,4 @@
-*{
+body{
     font-family: 'Inter', serif;
 }
 
@@ -98,7 +98,6 @@
 
 .hero-button{
     align-self: flex-start;
-
 }
 
 .hero-button button{
@@ -125,7 +124,6 @@
     border: 2px solid #E4E4E7;
     box-shadow: 0px 1px #E4E4E7;
     margin-top: 74px;
-
 }
 
 .achievements-container .achievements-card .achievements-title{
@@ -169,12 +167,117 @@
 .achievements-card .achievements-description span{
     font-size: 24px;
     font-weight: bolder;
-    /* margin-top: 8px; */
 }
 
 .achievements-card .achievements-description p{
     font-size: 12px;
     margin-top: 0px;
+}
+
+.achievements-break{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1028px;
+}
+
+.review-main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Outfit', sans-serif !important;
+}
+
+.review-main-title span{
+    color: green;
+}
+
+.reviews .reviews-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.reviews .reviews-container .review-card{
+    width: 360px;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #E4E4E7;
+    box-shadow: 0px 1px #E4E4E7;
+    margin-top: 53px;
+}
+
+.reviews-container .review-card .review-profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 24px;
+}
+
+.review-card .review-profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.review-card .review-profile .review-detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.review-profile .review-detail .name{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    color: #09090B;
+}
+
+.review-profile .review-detail .time{
+    font-size: 14px;
+    margin: 0;
+    color: #71717A;
+}
+
+.review-card .review-profile .review-rating{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+    margin-left: auto;
+}
+
+.review-profile .review-rating p{
+    font-size: 20px;
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-profile .review-rating .rating{
+    font-size: 20px;
+}
+
+.review-profile .review-rating .star{
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.review-card .review-description .review-title{
+    font-size: 16px;
+    font-weight: 700;
+    color: green;
+    margin: 24px;
+}
+
+.review-card .review-description .review-text{
+    font-size: 14px;
+    /* font-weight: 700; */
+    color: #71717A;
+    margin: 24px;
 }
 
 @media(max-width: 834px){
