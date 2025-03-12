@@ -66,6 +66,10 @@ body {
     background-color: #F1F5F9;
 
 }
+.mobile-illustration {
+    display: none; /* Sembunyikan ilustrasi secara default */
+}
+
 
 .logo {
     font-size: 24px;
@@ -191,6 +195,12 @@ body {
         width: 100%;
         padding: 20px; 
         text-align: center; 
+    }
+    .mobile-illustration {
+        display: block; /* Tampilkan ilustrasi pada mobile */
+        max-width: 100%; /* Pastikan ilustrasi responsif */
+        height: auto; /* Menjaga rasio aspek */
+        margin-top: 20px; /* Jarak atas jika diperlukan */
     }
 
     .left-panel {
