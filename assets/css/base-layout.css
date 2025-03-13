@@ -16,40 +16,82 @@ body {
     padding: 0;
     font-weight: 500;
     font-size: 12px;
+
+    transition: all 0.2s ease;
   }
 }
 
 .container {
-  /* background-color: greenyellow; */
   display: flex;
-  min-height: 100vh;
-  ;
+  height: 100vh;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px solid var(--outline-color);
+  border-right: 1px solid var(--outline-color);
+
+  position: relative;
 }
 
-.sidebar-container {
-  /* background-color: blue; */
+.sidebar {
   width: 300px;
 
-  padding: 5px;
+  padding: 8px;
   display: flex;
+  flex-direction: column;
+  gap: 8px;
 
   border-right: 1px solid var(--outline-color);
 
+  z-index: 10;
+
+  background-color: var(--bg-color);
+
   @media (max-width: 1024px) {
-    display: none;
+    left: -400px;
+    position: absolute;
   }
+}
+
+.sidebar-mobile-opened {
+  left: 0px;
+  min-height: 98vh;
+}
+
+#overlay {
+  display: none;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  z-index: 6;
+  opacity: 0.5;
+}
+
+.logo-section {
+  padding: 20px;
+  border-bottom: 1px solid #E4E4E7;
+}
+
+.logo {
+  color: #4CAF50;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .content-container {
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  /* background-color: blueviolet; */
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .navbar {
   background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
   border-bottom: 1px solid var(--outline-color);
   border-top: 1px solid var(--outline-color);
   display: flex;
@@ -79,7 +121,7 @@ body {
   border: none;
   cursor: pointer;
 
-  svg {
+  .icon {
     stroke-width: 1px;
   }
 }
@@ -93,12 +135,10 @@ body {
 }
 
 .content {
-  /* background-color: brown; */
-  display: flex;
-  flex-direction: column;
   padding: 8px;
-  
+
   flex: 1;
+  overflow-y: auto;
 }
 
 
@@ -106,9 +146,42 @@ body {
   display: none;
 }
 
+#sidebar-closer {
+  font-weight: 400;
+  display: none;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: transparent;
+  border: 1px solid var(--outline-color);
+  border-radius: 8px;
+  cursor: pointer;
+  
+  
+  .icon {
+    margin-left: auto;
+    stroke-width: 1px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  * {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background-color: #FEFEFE;
+  }
+}
+
 @media (max-width: 1024px) {
   #sidebar-trigger {
-    display: block;
+    display: flex;
+  }
+
+  #sidebar-closer {
+    display: flex;
   }
 }
 
@@ -120,4 +193,139 @@ body {
   .navbar {
     bottom: 0;
   }
+}
+
+.menu-section {
+  padding: 12px;
+  border-bottom: 1px solid #E4E4E7;
+}
+
+.menu-section h3 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+  padding: 0 12px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+
+  .icon {
+    stroke-width: 1px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover .icon {
+    stroke: white;
+  }
+
+  &:hover {
+    background-color: var(--primary-color);
+    opacity: 75%;
+    color: #FFFFFF;
+  }
+
+  &:hover * {
+    color: white;
+  }
+
+  &.menu-item-active {
+    background-color: var(--primary-color);
+    opacity: 75%;
+
+    * {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.menu-shortcut {
+  width: fit-content;
+  margin-left: auto;
+  color: #999;
+  font-size: 12px;
+}
+
+.user-profile-section {
+  margin-top: auto;
+}
+
+.user-profile {
+  background-color: #fff;
+  border: 1px solid #E4E4E7;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.user-profile>div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  text-align: left;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.user-email {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 8px;
+  border: 1px solid tomato;
+  border-radius: 6px;
+  background-color: white;
+  color: tomato;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: tomato;
+  color: white;
 }
