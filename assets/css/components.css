@@ -1,0 +1,61 @@
+@import url("base-layout.css");
+
+:root {
+  --status-listed: #57534E;
+  --status-applied: #2563EB;
+  --status-interview: #EA580C;
+  --status-accepted: #16A34A;
+  --status-rejected: #DC2626;
+}
+
+.emoji {
+  font-variant-emoji: emoji;
+}
+
+.text-listed {color: var(--status-listed);}
+.text-applied {color: var(--status-applied);}
+.text-interview {color: var(--status-interview);}
+.text-accepted {color: var(--status-accepted);}
+.text-rejected {color: var(--status-rejected);}
+
+.scorecards-wrapper {
+  display: flex;
+  gap: 10px;
+  overflow-y: auto;
+
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scorecard {
+  border-radius: 12px;
+  border: 1px solid var(--outline-color);
+  padding: 24px;
+  min-width: 150px;
+  
+  .scorecard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    * {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .score {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .desc {
+    color: gray;
+    font-weight: 400;
+  }
+}
+

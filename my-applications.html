@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <!-- Change to UTF 16 instead of UTF 8 to support CSS font-variant-emoji -->
+  <meta charset="UTF-16">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Fonts -->
@@ -11,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./assets/css/base-layout.css">
+  <link rel="stylesheet" href="./assets/css/components.css">
   <title>My Applications</title>
 </head>
 
@@ -117,7 +120,52 @@
       </div>
 
       <div class="content">
-        <h1 style="height: 200vh;">Page Content</h1>
+        <div class="scorecards-wrapper">
+          <div class="scorecard">
+            <div class="scorecard-header">
+              <p class="text-listed">Listed</p>
+              <span class="emoji">💾</span>
+            </div>
+            <p class="score">43</p>
+            <p class="desc">job applications</p>
+          </div>
+
+          <div class="scorecard">
+            <div class="scorecard-header">
+              <p class="text-applied">Applied</p>
+              <span class="emoji">✈</span>
+            </div>
+            <p class="score">43</p>
+            <p class="desc">job applications</p>
+          </div>
+
+          <div class="scorecard">
+            <div class="scorecard-header">
+              <p class="text-interview">Interview</p>
+              <span class="emoji">🗣</span>
+            </div>
+            <p class="score"">43</p>
+            <p class="desc">job applications</p>
+          </div>
+
+          <div class="scorecard">
+            <div class="scorecard-header">
+              <p class="text-accepted">Accepted</p>
+              <span class="emoji">🤝</span>
+            </div>
+            <p class="score"">43</p>
+            <p class="desc">job applications</p>
+          </div>
+
+          <div class="scorecard">
+            <div class="scorecard-header">
+              <p class="text-rejected">Rejected</p>
+              <span class="emoji">😭</span>
+            </div>
+            <p class="score"">43</p>
+            <p class="desc">job applications</p>
+          </div>
+        </div>
       </div>
     </main>
   </div>
