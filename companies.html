@@ -127,58 +127,7 @@
               <input class="search-input" type="text" placeholder="Search">
               <i class="icon search-icon" data-lucide="search"></i>
             </div>
-            <div class="company-card-list">
-              <a class="company-card" href="#">
-                <img src="https://placehold.co/36" alt="company">
-                <div class="company-info">
-                  <h3 class="company-name">
-                    Toktok
-                  </h3>
-                  <p class="company-category">
-                    IT Consulting
-                  </p>
-                  <p class="company-location">
-                    Jakarta, Indonesia
-                  </p>
-                </div>
-                <p class="date">
-                  11m
-                </p>
-              </a>
-              <a class="company-card" href="#">
-                <img src="https://placehold.co/36" alt="company">
-                <div class="company-info">
-                  <h3 class="company-name">
-                    Toktok
-                  </h3>
-                  <p class="company-category">
-                    IT Consulting
-                  </p>
-                  <p class="company-location">
-                    Jakarta, Indonesia
-                  </p>
-                </div>
-                <p class="date">
-                  11m
-                </p>
-              </a>
-              <a class="company-card" href="#">
-                <img src="https://placehold.co/36" alt="company">
-                <div class="company-info">
-                  <h3 class="company-name">
-                    Toktok
-                  </h3>
-                  <p class="company-category">
-                    IT Consulting
-                  </p>
-                  <p class="company-location">
-                    Jakarta, Indonesia
-                  </p>
-                </div>
-                <p class="date">
-                  11m
-                </p>
-              </a>
+            <div id="company-card-list" class="company-card-list">
             </div>
           </div>
           <div id="company-details">Company Details</div>
@@ -187,6 +136,67 @@
   </div>
 
   <div id="overlay"></div>
+
+  <!-- Momentjs -->
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
+  <script>
+    moment.locale('en', {
+      relativeTime: {
+        future: 'in %s',
+        past: '%s',
+        s: '1s',
+        ss: '%ss',
+        m: '1m',
+        mm: '%dm',
+        h: '1h',
+        hh: '%dh',
+        d: '1d',
+        dd: '%dd',
+        M: '1m',
+        MM: '%dm',
+        y: '1y',
+        yy: '%dy'
+      }
+    })
+
+    const companyCardList = document.getElementById('company-card-list');
+
+    let companies = [];
+
+    async function fetchCompanies() {
+      await fetch('./assets/data/companies.json').then(response => response.json())
+        .then(data => {
+          companies = data;
+          displayCompanies(companies);
+        });
+    }
+
+    async function displayCompanies(companies) {
+      companyCardList.innerHTML = companies.map(company => {
+        return `
+          <a class="company-card" href="./companies.html?id=${company.id}">
+            <img src="https://placehold.co/36" alt="company">
+            <div class="company-info">
+              <h3 class="company-name">
+                ${company.name}
+              </h3>
+              <p class="company-category">
+              ${company.category}
+              </p>
+              <p class="company-location">
+                ${company.location}
+              </p>
+            </div>
+            <p class="date">
+              ${moment(company.created_at).fromNow()}
+            </p>
+          </a>
+        `;
+      }).join('');
+    }
+
+    fetchCompanies();
+  </script>
 
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
