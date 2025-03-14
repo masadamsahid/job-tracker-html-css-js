@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Google",
+    "location": "Mountain View, CA",
+    "url_link": "https://www.google.com/careers/",
+    "created_at": "2023-10-26T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "TikTok",
+    "location": "Los Angeles, CA",
+    "url_link": "https://careers.tiktok.com/",
+    "created_at": "2023-10-27T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Gojek",
+    "location": "Jakarta, Indonesia",
+    "url_link": "https://www.gojek.com/careers/",
+    "created_at": "2023-10-28T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Airbnb",
+    "location": "San Francisco, CA",
+    "url_link": "https://careers.airbnb.com/",
+    "created_at": "2023-10-29T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Spotify",
+    "location": "Stockholm, Sweden",
+    "url_link": "https://www.lifeatspotify.com/",
+    "created_at": "2023-10-30T00:00:00Z"
+  },
+  {
+    "id": 6,
+    "name": "Netflix",
+    "location": "Los Gatos, CA",
+    "url_link": "https://jobs.netflix.com/",
+    "created_at": "2023-11-01T00:00:00Z"
+  },
+  {
+    "id": 7,
+    "name": "Amazon",
+    "location": "Seattle, WA",
+    "url_link": "https://www.amazon.jobs/",
+    "created_at": "2023-11-02T00:00:00Z"
+  },
+  {
+    "id": 8,
+    "name": "JP Morgan Chase",
+    "location": "New York, NY",
+    "url_link": "https://careers.jpmorgan.com/US/en",
+    "created_at": "2023-11-03T00:00:00Z"
+  },
+  {
+    "id": 9,
+    "name": "Adobe",
+    "location": "San Jose, CA",
+    "url_link": "https://www.adobe.com/careers.html",
+    "created_at": "2023-11-04T00:00:00Z"
+  },
+  {
+    "id": 10,
+    "name": "Salesforce",
+    "location": "San Francisco, CA",
+    "url_link": "https://www.salesforce.com/company/careers/",
+    "created_at": "2023-11-05T00:00:00Z"
+  }
+]

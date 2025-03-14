@@ -1,12 +1,15 @@
+/* IMPORTANT NOTICE!
+ * This file probably will not be used in the future since the newer CSS for sidebar
+ * is already refactored to `base-layout.css`
+ */
+
 .sidebar {
-    width: 250px;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
-    border-right: 1px solid #E4E4E7;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    padding: 5px;
+    padding: 0;
 }
 
 /* Sembunyikan sidebar pada resolusi kurang dari 768px */
