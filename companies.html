@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Change to UTF 16 instead of UTF 8 to support CSS font-variant-emoji -->
+  <meta charset="UTF-16">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/companies.css">
+  <title>Companies</title>
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <!-- Logo Section -->
+      <section class="logo-section">
+        <div class="logo">LOGO</div>
+      </section>
+
+      <!-- Apps Menu Section -->
+      <section class="menu-section">
+        <h3>Apps</h3>
+        <ul class="menu-list">
+          <li>
+            <a href="#" class="menu-item">
+              <i class="icon" data-lucide="briefcase-business"></i>
+              <span>
+                My Applications
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-item">
+              <i class="icon" data-lucide="bot-message-square"></i>
+              <span>
+                AI Interviews
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- User Menu Section -->
+      <section class="menu-section">
+        <h3>User</h3>
+        <ul class="menu-list">
+          <li>
+            <a href="#" class="menu-item">
+              <i class="icon" data-lucide="user-round"></i>
+              <span>
+                Profile
+              </span>
+              <span class="menu-shortcut">⌘ P</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-item">
+              <i class="icon" data-lucide="credit-card"></i>
+              <span>
+                Billing
+              </span>
+              <span class="menu-shortcut">⌘ B</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-item">
+              <i class="icon" data-lucide="settings"></i>
+              <span>
+                Settings
+              </span>
+              <span class="menu-shortcut">⌘ S</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- User Profile Section -->
+      <section class="user-profile-section">
+        <div class="user-profile">
+          <div>
+            <img src="./assets/img/avatar-icon.png" alt="User Avatar" class="user-avatar">
+            <div class="user-info">
+              <h4 class="user-name">Budi Bedu Beda</h4>
+              <p class="user-email">budibedubeda@gmail.com</p>
+            </div>
+          </div>
+
+          <button class="logout-btn">Logout</button>
+        </div>
+      </section>
+
+      <button id="sidebar-closer">
+        <span>Close Sidebar</span>
+        <i class="icon" data-lucide="panel-right-open"></i>
+      </button>
+    </aside>
+
+    <main class="content-container">
+      <div class="navbar">
+        <div class="actions-wrapper left-actions">
+          <button id="sidebar-trigger" href="#" class="action">
+            <i class="icon" data-lucide="panel-right-close"></i>
+          </button>
+          <!-- Write some code here to add additional left icon actions -->
+        </div>
+        <h1 class="page-title">Companies</h1>
+
+        <div class="actions-wrapper right-actions">
+          <!-- Write some code here to add additional right icon actions -->
+          <a href="#" class="action">
+            <i class="icon" data-lucide="plus"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="content p-0">
+        <div class="flex" style="height: 100%;">
+          <div id="company-list" class="scrollbar-hidden">
+            <div class="search-bar-wrapper">
+              <input class="search-input" type="text" placeholder="Search">
+              <i class="icon search-icon" data-lucide="search"></i>
+            </div>
+            <div class="company-card-list">
+              <a class="company-card" href="#">
+                <img src="https://placehold.co/36" alt="company">
+                <div class="company-info">
+                  <h3 class="company-name">
+                    Toktok
+                  </h3>
+                  <p class="company-category">
+                    IT Consulting
+                  </p>
+                  <p class="company-location">
+                    Jakarta, Indonesia
+                  </p>
+                </div>
+                <p class="date">
+                  11m
+                </p>
+              </a>
+              <a class="company-card" href="#">
+                <img src="https://placehold.co/36" alt="company">
+                <div class="company-info">
+                  <h3 class="company-name">
+                    Toktok
+                  </h3>
+                  <p class="company-category">
+                    IT Consulting
+                  </p>
+                  <p class="company-location">
+                    Jakarta, Indonesia
+                  </p>
+                </div>
+                <p class="date">
+                  11m
+                </p>
+              </a>
+              <a class="company-card" href="#">
+                <img src="https://placehold.co/36" alt="company">
+                <div class="company-info">
+                  <h3 class="company-name">
+                    Toktok
+                  </h3>
+                  <p class="company-category">
+                    IT Consulting
+                  </p>
+                  <p class="company-location">
+                    Jakarta, Indonesia
+                  </p>
+                </div>
+                <p class="date">
+                  11m
+                </p>
+              </a>
+            </div>
+          </div>
+          <div id="company-details">Company Details</div>
+        </div>
+    </main>
+  </div>
+
+  <div id="overlay"></div>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="/assets/js/sidebar.js"></script>
+</body>
+
+</html>
