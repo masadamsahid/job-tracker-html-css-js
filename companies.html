@@ -139,6 +139,7 @@
 
   <!-- Momentjs -->
   <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
+  <script src="./assets/js/query-string-param.js"></script>
   <script>
     moment.locale('en', {
       relativeTime: {
@@ -171,10 +172,17 @@
         });
     }
 
+    console.log(window.location);
+    window.addEventListener('urlChange', (e) => {
+      console.log(location);
+    });
+
+
     async function displayCompanies(companies) {
-      companyCardList.innerHTML = companies.map(company => {
-        return `
-          <a class="company-card" href="./companies.html?id=${company.id}">
+      companies.forEach(company => {
+        const companyCard = document.createElement('div');
+        companyCard.classList.add('company-card');
+        companyCard.innerHTML = `
             <img src="https://placehold.co/36" alt="company">
             <div class="company-info">
               <h3 class="company-name">
@@ -190,9 +198,19 @@
             <p class="date">
               ${moment(company.created_at).fromNow()}
             </p>
-          </a>
         `;
-      }).join('');
+
+        companyCard.addEventListener('click', (e) => {
+
+          // location.search = `id=${company.id}`;
+          history.replaceState({}, '', `?id=${company.id}`);
+          window.dispatchEvent(new Event('urlChange'));
+          // console.log(location);
+          console.log(`${company.name}`);
+        });
+
+        companyCardList.appendChild(companyCard);
+      });
     }
 
     fetchCompanies();
