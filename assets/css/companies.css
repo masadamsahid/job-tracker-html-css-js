@@ -67,7 +67,11 @@
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 1024px) {
+    min-width: fit-content;
+  }
+
+  @media (max-width: 640px) {
     flex: auto;
     max-width: none;
     border: none;
@@ -79,7 +83,85 @@
 
   min-width: 400px;
 
-  @media (max-width: 480px) {
+  /* background-color: blue; */
+
+  .content-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    /* background-color: aqua; */
+
+    border-bottom: 1px solid var(--outline-color);
+    padding: 16px;
+
+    .company-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 2000px;
+    }
+
+    .company-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .company-name {
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 400;
+
+        color: #3F3F46;
+      }
+    }
+
+    .added-date {
+      color: #3F3F46;
+      font-size: 12px;
+      font-weight: 400;
+
+      text-align: right;
+    }
+
+    .actions {
+      display: flex;
+
+      & > .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 36px;
+        height: 36px;
+        padding: 10;
+
+        .icon {
+          width: 16px;
+          height: 16px;
+
+          stroke-width: 1px;
+        }
+      }
+    }
+  }
+
+  .content-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    overflow-y: auto;
+  }
+
+  @media (max-width: 1024px) {
+    min-width: 150px;
+  }
+
+  @media (max-width: 640px) {
     display: none;
   }
 }
@@ -117,5 +199,17 @@
     color: var(--outline-color);
 
     stroke: var(--outline-color);
+  }
+}
+
+
+#your-applications-to-company-table-container {
+  overflow-x: auto;
+  
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  
+  &::-webkit-scrollbar {
+    display: none;
   }
 }

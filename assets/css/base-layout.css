@@ -2,6 +2,7 @@
   --primary-color: #16A249;
   --primary-color-rgb: 22, 162, 73;
   --text-color: #09090B;
+  --text-color-gray: gray;
   --bg-color: #FFF;
   --outline-color: #E4E4E7;
 }
@@ -20,6 +21,10 @@ body {
     text-decoration: none;
 
     transition: all 0.2s ease;
+  }
+
+  p {
+    color: var(--text-color-gray);
   }
 }
 

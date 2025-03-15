@@ -130,7 +130,122 @@
             <div id="company-card-list" class="company-card-list">
             </div>
           </div>
-          <div id="company-details">Company Details</div>
+          <div id="company-details">
+            <div class="content-header">
+              <img src="./assets/data/img/company-logos/amazon_logo.jpeg" alt="" class="company-logo">
+              <div class="company-info">
+                <h2 class="company-name">
+                  Amazon
+                </h2>
+                <p>
+                  IT Consulting • Jakarta, Indonesia
+                </p>
+              </div>
+              <!-- <p class="added-date">
+                Added a year ago
+              </p> -->
+              <div class="actions">
+                <button class="btn">
+                  <i class="icon" data-lucide="ellipsis"></i>
+                </button>
+              </div>
+            </div>
+            <div class="content-body">
+              <div class="card">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eveniet velit mollitia incidunt nemo odit, sequi corrupti consequatur ratione sapiente tempore deserunt, aspernatur quaerat placeat.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tempore id? Doloribus tempora quisquam eaque omnis vitae minus quae non quam pariatur obcaecati error, aperiam blanditiis ipsam officiis? Ullam est, asperiores eaque itaque facilis ex laborum nemo repellendus officiis quam?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore voluptate tenetur alias doloremque iusto soluta porro. Voluptates, aliquid eum!
+                </p>
+              </div>
+
+              <div class="card">
+                <h3 class="card-title">
+                  Your Job Applications to Amazon
+                </h3>
+                <div id="your-applications-to-company-table-container">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="text-left" style="min-width: 230px;">Job Title</th>
+                        <th class="text-left" style="min-width: 100px;">Status</th>
+                        <th class="text-left" style="min-width: 100px;">Tracked Since</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody id="your-applications-to-company-table-body">
+                      <tr>
+                        <td>
+                          <a href="./application-details.html?id=7" class="link">
+                            Backend Developer
+                          </a>
+                        </td>
+                        <td>
+                          <div class="status-badge status-badge-interview">
+                            interview
+                          </div>
+                        </td>
+                        <td title="02, Nov 2023 at 20:30:00" class="moment-from-now">
+                          a year ago
+                        </td>
+                        <td>
+                          <button class="btn" style="margin: auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="ellipsis" class="lucide lucide-ellipsis icon"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                          </button>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>
+                          <a href="./application-details.html?id=7" class="link">
+                            Backend Developer
+                          </a>
+                        </td>
+                        <td>
+                          <div class="status-badge status-badge-interview">
+                            interview
+                          </div>
+                        </td>
+                        <td title="02, Nov 2023 at 20:30:00" class="moment-from-now">
+                          a year ago
+                        </td>
+                        <td>
+                          <button class="btn" style="margin: auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="ellipsis" class="lucide lucide-ellipsis icon"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                          </button>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>
+                          <a href="./application-details.html?id=7" class="link">
+                            Backend Developer
+                          </a>
+                        </td>
+                        <td>
+                          <div class="status-badge status-badge-interview">
+                            interview
+                          </div>
+                        </td>
+                        <td title="02, Nov 2023 at 20:30:00" class="moment-from-now">
+                          a year ago
+                        </td>
+                        <td>
+                          <button class="btn" style="margin: auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="ellipsis" class="lucide lucide-ellipsis icon"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </main>
   </div>
@@ -139,7 +254,6 @@
 
   <!-- Momentjs -->
   <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
-  <script src="./assets/js/query-string-param.js"></script>
   <script>
     moment.locale('en', {
       relativeTime: {
@@ -165,7 +279,7 @@
     let companies = [];
 
     async function fetchCompanies() {
-      await fetch('./assets/data/companies.json').then(response => response.json())
+      await fetch('/assets/data/companies.json').then(response => response.json())
         .then(data => {
           companies = data;
           displayCompanies(companies);
@@ -183,7 +297,7 @@
         const companyCard = document.createElement('div');
         companyCard.classList.add('company-card');
         companyCard.innerHTML = `
-            <img src="https://placehold.co/36" alt="company">
+            <img src="${company.img_url}" alt="company">
             <div class="company-info">
               <h3 class="company-name">
                 ${company.name}
@@ -217,7 +331,7 @@
   </script>
 
   <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide"></script>
   <script>
     lucide.createIcons();
   </script>
