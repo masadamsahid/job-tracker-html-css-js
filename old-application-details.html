@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Details</title>
+  <link rel="stylesheet" href="./assets/css/app-details-styles.css">
+  <link rel="stylesheet" href="./assets/css/sidebar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar-toggle" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i> <!-- Ikon hamburger -->
+        </div>
+        <!-- Sidebar Kiri -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Logo Section -->
+            <section class="logo-section">
+                <div class="logo">LOGO</div>
+            </section>
+            
+            <!-- Apps Menu Section -->
+            <section class="menu-section">
+                <h3>Apps</h3>
+                <ul class="menu-list">
+                    <li>
+                        <a href="#" class="menu-item">
+                        <img src="./assets/img/myApp-Icon.png" class="menu-icon" alt="My Applications Icon">
+                            <span>My Applications</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                        <img src="./assets/img/ai-icon.png" class="menu-icon" alt="My Applications Icon">
+                            <span>AI Interviews</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        
+            <!-- User Menu Section -->
+            <section class="menu-section">
+                <h3>User</h3>
+                <ul class="menu-list">
+                    <li>
+                        <a href="#" class="menu-item">
+                        <img src="./assets/img/user-round.png" class="menu-icon" alt="My Applications Icon">
+                            <span>Profile</span>
+                            <span class="menu-shortcut">⌘P</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                        <img src="./assets/img/credit-card.png" class="menu-icon" alt="My Applications Icon">
+                            <span>Billing</span>
+                            <span class="menu-shortcut">⌘B</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                        <img src="./assets/img/settings.png" class="menu-icon" alt="My Applications Icon">
+                            <span>Settings</span>
+                            <span class="menu-shortcut">⌘S</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        
+            <!-- User Profile Section -->
+            <section class="user-profile-section">
+                <div class="user-profile">
+                <div>
+                    <img src="./assets/img/avatar-icon.png" alt="User Avatar" class="user-avatar">
+                    <div class="user-info">
+                        <h4 class="user-name">Budi Bedu Beda</h4>
+                        <p class="user-email">budibedubeda@gmail.com</p>
+                    </div>
+                </div>
+    
+                <button class="logout-btn">Logout</button>
+                </div>
+            </section>
+        </aside>
+
+        <div class="overlay" onclick="toggleSidebar()"></div> <!-- Overlay -->
+
+        <!-- Konten Utama -->
+        <main class="content-container">
+            <!-- Header Card -->
+            <div class="job-header-card">
+                <div class="company-info">
+                    <div class="logo-title">
+                        <img src="./assets/img/company-logo.png" alt="ABC Company" class="company-logo">
+                        <div class="title-section">
+                            <h2>ABC Company</h2>
+                            <h3 class="job-title">Software Engineer</h3>
+                            <p class="job-meta">at ABC Company • applied 3 days ago</p>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn-more" onclick="toggleDropdown()">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <ul>
+                                <li><a href="#">List 1</a></li>
+                                <li><a href="#">List 2</a></li>
+                                <li><a href="#">List 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn-secondary">Go to Job Link</button>
+                    <button class="btn-primary">Simulate an Interview</button>
+                </div>
+            </div>
+
+            <!-- Job Description Card -->
+            <div class="job-description-card">
+                <h3>Job Description</h3>
+                <div class="description-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a neque convallis, sollicitudin libero sit amet, pharetra ante. Vivamus auctor, mauris at maximus sagittis, eros urna aliquet quam, at luctus nulla sapien nec nisi. Vestibulum mi nulla, molestie a scelerisque quis, ultrices a lorem. Praesent ultrices nibh quis risus dictum dapibus. Aenean at quam scelerisque, consequat metus ac, commodo odio. </p>
+
+                    <br><p>Donec sit amet mi euismod, finibus odio a, mollis nibh. Morbi id quam commodo, maximus urna sed, efficitur quam. Curabitur bibendum, dui in fermentum molestie, augue purus semper tortor, vel consectetur ligula sapien non ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ac tristique sem. Duis tristique libero sit amet ante facilisis, nec aliquet lacus ornare. Nulla a turpis id risus dictum ornare in non dui. Phasellus tempus pretium lacus id elementum.</p>
+                        
+                    <br><p>Etiam eget tempus ex, in dictum est. Cras sed molestie leo. Vivamus faucibus egestas felis, nec vulputate tortor convallis in. Mauris dignissim pulvinar enim, nec laoreet eros suscipit non. Vestibulum non iaculis eros. Suspendisse pulvinar dui mi, eget vehicula nisl eleifend id. Nullam et porta libero, vel eleifend est. Suspendisse potenti..</p>
+            </p>
+                    <ul>
+                        <li>Sed feugiat libero eu tincidunt cursus.</li>
+                        <li>Proin ac risus fringilla, tempus ligula id, maximus neque.</li>
+                        <li>Sed feugiat libero eu tincidunt cursus.</li>
+                        <li>Sed feugiat libero eu tincidunt cursus.</li>
+                        <li>Proin ac risus fringilla, tempus ligula id, maximus neque.</li>
+                        <li>Sed feugiat libero eu tincidunt cursus.</li>
+
+                    </ul>
+                    <p>Proin ac risus fringilla, tempus ligula id, maximus neque.
+                        Aliquam facilisis sapien non ex maximus, in lacinia nisl tempus.
+                        Nullam id enim ut tellus consectetur dignissim.
+                        Fusce molestie nunc vel metus feugiat, at maximus orci vulputate.
+                        Integer vel justo scelerisque dui ornare scelerisque.
+                        
+                        Phasellus ac tristique sem. Duis tristique libero sit amet ante facilisis, nec aliquet lacus ornare. Nulla a turpis id risus dictum ornare in non dui.</p>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar Kanan -->
+        <aside class="content-side">
+            <h2 class="side-header">Your Job Snapshot</h2>
+            
+            <!-- Key points section -->
+            <div class="snapshot-section">
+                <div class="section-header">
+                    <span class="icon">✨</span>
+                    <h3>Key points of this job</h3>
+                </div>
+                <ul class="snapshot-list">
+                    <li>Sed feugiat libero eu tincidunt cursus.</li>
+                    <li>Proin ac risus fringilla, tempus ligula id, maximus neque.</li>
+                    <li>Aliquam facilisis sapien non ex maximus, in lacinia nisl tempus.</li>
+                    <li>Nullam id enim ut tellus consectetur dignissim.</li>
+                    <li>Fusce molestie nunc vel metus feugiat, at maximus orci vulputate.</li>
+                    <li>Integer vel justo scelerisque dui ornare scelerisque.</li>
+                </ul>
+                <p class="additional-text">
+                    Phasellus ac tristique sem. Duis tristique libero sit amet ante facilisis, nec aliquet
+                    lacus ornare. Nulla a turpis id risus dictum ornare in non dui.
+                </p>
+            </div>
+
+            <!-- What you can improve section -->
+            <div class="snapshot-section">
+                <div class="section-header">
+                    <span class="icon">🚀</span>
+                    <h3>What you can improve</h3>
+                </div>
+                <ul class="snapshot-list">
+                    <li>Sed feugiat libero eu tincidunt cursus.</li>
+                    <li>Proin ac risus fringilla, tempus ligula id, maximus neque.</li>
+                    <li>Aliquam facilisis sapien non ex maximus, in lacinia nisl tempus.</li>
+                    <li>Nullam id enim ut tellus consectetur dignissim.</li>
+                    <li>Fusce molestie nunc vel metus feugiat, at maximus orci vulputate.</li>
+                    <li>Integer vel justo scelerisque dui ornare scelerisque.</li>
+                </ul>
+            </div>
+
+            <button class="btn-regenerate">Regenerate</button>
+        </aside>
+    </div>
+
+  
+
+
+</body>
+<script>
+function toggleDropdown() {
+    const dropdown = document.getElementById('dropdownMenu');
+    dropdown.classList.toggle('show');
+    
+    // Menutup dropdown ketika mengklik di luar
+    document.addEventListener('click', function(event) {
+        if (!event.target.matches('.btn-more') && 
+            !event.target.matches('.fas')) {
+            if (dropdown.classList.contains('show')) {
+                dropdown.classList.remove('show');
+            }
+        }
+    });
+}
+
+// function toggleSidebar() {
+//     const sidebar = document.querySelector('.sidebar');
+//     if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+//         sidebar.style.display = 'flex'; // Tampilkan sidebar
+//     } else {
+//         sidebar.style.display = 'none'; // Sembunyikan sidebar
+//     }
+// }
+
+function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+
+    // Cek apakah sidebar saat ini ditampilkan
+    if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+        sidebar.style.display = 'flex'; // Tampilkan sidebar
+        overlay.classList.add('active'); // Tampilkan overlay
+    } else {
+        sidebar.style.display = 'none'; // Sembunyikan sidebar
+    }
+}
+
+// Fungsi untuk mengatur tampilan sidebar berdasarkan ukuran jendela
+function adjustSidebarDisplay() {
+    const sidebar = document.querySelector('.sidebar');
+    if (window.innerWidth > 768) {
+        sidebar.style.display = 'flex'; // Tampilkan sidebar
+    } else {
+        sidebar.style.display = 'none'; // Sembunyikan sidebar
+    }
+}
+// Event listener untuk mengatur tampilan sidebar saat jendela diubah ukurannya
+window.addEventListener('resize', adjustSidebarDisplay);
+
+// Panggil fungsi saat halaman dimuat untuk mengatur tampilan awal
+window.addEventListener('load', adjustSidebarDisplay);
+</script>
+</html>
