@@ -130,14 +130,21 @@
             <div id="company-card-list" class="company-card-list">
             </div>
           </div>
-          <div id="company-details">
-
+          <div id="company-details" class="company-details">
           </div>
         </div>
     </main>
   </div>
 
-  <div id="overlay"></div>
+  <div id="sidebar-overlay"></div>
+  
+  <div id="drawer-overlay"></div>
+  <div id="drawer">
+    <div class="drawer-pull">
+      <div class="handler"></div>
+    </div>
+    <div id="drawer-content" class="company-details-drawer"></div>
+  </div>
 
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -146,6 +153,20 @@
   <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
   <script>window.momentShorted = moment;</script>
   <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
+  <script>
+    const drawer = document.getElementById('drawer');
+    const drawerOverlay = document.getElementById('drawer-overlay');
+    function openDrawer() {
+      drawer.classList.add('opened');
+      drawerOverlay.style.display = 'block';
+    }
+    function closeDrawer() {
+      drawer.classList.remove('opened');
+      drawerOverlay.style.display = 'none';
+    }
+
+    drawerOverlay.addEventListener('click', closeDrawer);
+  </script>
   <script>
 
     let urlParams = new URLSearchParams(window.location.search);
@@ -192,6 +213,7 @@
 
     function displaySelectedCompany(company) {
       const companyDetails = document.getElementById('company-details');
+      const drawerContent = document.getElementById('drawer-content');
 
       let jobApplicationsToTheSelectedCompany = [];
 
@@ -203,7 +225,7 @@
 
       console.log(jobApplicationsToTheSelectedCompany);
 
-      companyDetails.innerHTML = `
+      const companyDetailHTMLStr = `
         <div class="content-header">
           <img src="${company.img_url}" alt="" class="company-logo">
           <div class="company-info">
@@ -259,19 +281,25 @@
                         </button>
                       </td>
                     </tr>
-                    `).join('')
-        }
+                  `).join('')}
                 </tbody>
               </table>
             </div>
           </div>
         </div>
       `;
+      companyDetails.innerHTML = companyDetailHTMLStr;
+      drawerContent.innerHTML = companyDetailHTMLStr;
       lucide.createIcons();
     }
 
     function selectCompany(company_id) {
       selectedCompany = companies.find(company => company.id === company_id);
+      
+      // check if viewport width more than 640px
+      if (window.innerWidth < 640) {
+        openDrawer();
+      }
 
       displaySelectedCompany(selectedCompany);
     }

@@ -1,6 +1,6 @@
 
 const sidebar = document.getElementById('sidebar');
-const overlay = document.getElementById('overlay');
+const overlay = document.getElementById('sidebar-overlay');
 
 const sidebarTrigger = document.getElementById('sidebar-trigger');
 const sidebarCloser = document.getElementById('sidebar-closer');

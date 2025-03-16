@@ -65,7 +65,7 @@ body {
   min-height: 98vh;
 }
 
-#overlay {
+#sidebar-overlay {
   display: none;
   min-height: 100vh;
   min-width: 100vw;
@@ -335,4 +335,59 @@ body {
 .logout-btn:hover {
   background-color: tomato;
   color: white;
+}
+
+#drawer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 8px;
+  border-radius: 8px 8px 0 0;
+
+  position: fixed;
+  bottom: -100vh;
+
+  width: calc(100vw - 16px);
+  height: 80vh;
+
+  background-color: var(--bg-color);
+  z-index: 15;
+
+  transition-duration: 300ms;
+
+  .drawer-pull {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    height: 10px;
+    
+    .handler {
+      max-width: 80px;
+      width: 100%;
+      height: 4px;
+      background-color: var(--text-color-gray);
+      border-radius: 200px;
+    }
+  }
+
+  &.opened {
+    bottom: 0;
+  }
+
+  @media (min-width: 640px) {
+    display: none;
+  }
+}
+
+#drawer-overlay {
+  display: none;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  z-index: 6;
+  opacity: 0.5;
 }
