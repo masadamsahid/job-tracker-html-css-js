@@ -131,120 +131,7 @@
             </div>
           </div>
           <div id="company-details">
-            <div class="content-header">
-              <img src="./assets/data/img/company-logos/amazon_logo.jpeg" alt="" class="company-logo">
-              <div class="company-info">
-                <h2 class="company-name">
-                  Amazon
-                </h2>
-                <p>
-                  IT Consulting • Jakarta, Indonesia
-                </p>
-              </div>
-              <!-- <p class="added-date">
-                Added a year ago
-              </p> -->
-              <div class="actions">
-                <button class="btn">
-                  <i class="icon" data-lucide="ellipsis"></i>
-                </button>
-              </div>
-            </div>
-            <div class="content-body">
-              <div class="card">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eveniet velit mollitia incidunt nemo odit, sequi corrupti consequatur ratione sapiente tempore deserunt, aspernatur quaerat placeat.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tempore id? Doloribus tempora quisquam eaque omnis vitae minus quae non quam pariatur obcaecati error, aperiam blanditiis ipsam officiis? Ullam est, asperiores eaque itaque facilis ex laborum nemo repellendus officiis quam?
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore voluptate tenetur alias doloremque iusto soluta porro. Voluptates, aliquid eum!
-                </p>
-              </div>
 
-              <div class="card">
-                <h3 class="card-title">
-                  Your Job Applications to Amazon
-                </h3>
-                <div id="your-applications-to-company-table-container">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th class="text-left" style="min-width: 230px;">Job Title</th>
-                        <th class="text-left" style="min-width: 100px;">Status</th>
-                        <th class="text-left" style="min-width: 100px;">Tracked Since</th>
-                        <th>Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody id="your-applications-to-company-table-body">
-                      <tr>
-                        <td>
-                          <a href="./application-details.html?id=7" class="link">
-                            Backend Developer
-                          </a>
-                        </td>
-                        <td>
-                          <div class="status-badge status-badge-interview">
-                            interview
-                          </div>
-                        </td>
-                        <td title="02, Nov 2023 at 20:30:00" class="moment-from-now">
-                          a year ago
-                        </td>
-                        <td>
-                          <button class="btn" style="margin: auto">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="ellipsis" class="lucide lucide-ellipsis icon"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                          </button>
-                        </td>
-                      </tr>
-                      
-                      <tr>
-                        <td>
-                          <a href="./application-details.html?id=7" class="link">
-                            Backend Developer
-                          </a>
-                        </td>
-                        <td>
-                          <div class="status-badge status-badge-interview">
-                            interview
-                          </div>
-                        </td>
-                        <td title="02, Nov 2023 at 20:30:00" class="moment-from-now">
-                          a year ago
-                        </td>
-                        <td>
-                          <button class="btn" style="margin: auto">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="ellipsis" class="lucide lucide-ellipsis icon"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                          </button>
-                        </td>
-                      </tr>
-                      
-                      <tr>
-                        <td>
-                          <a href="./application-details.html?id=7" class="link">
-                            Backend Developer
-                          </a>
-                        </td>
-                        <td>
-                          <div class="status-badge status-badge-interview">
-                            interview
-                          </div>
-                        </td>
-                        <td title="02, Nov 2023 at 20:30:00" class="moment-from-now">
-                          a year ago
-                        </td>
-                        <td>
-                          <button class="btn" style="margin: auto">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="ellipsis" class="lucide lucide-ellipsis icon"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
     </main>
@@ -252,10 +139,20 @@
 
   <div id="overlay"></div>
 
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
   <!-- Momentjs -->
   <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
+  <script>window.momentShorted = moment;</script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
   <script>
-    moment.locale('en', {
+
+    let urlParams = new URLSearchParams(window.location.search);
+    let selectedCompanyId = Number(urlParams.get('id')) || 1;
+    // console.log(selectedCompanyId);
+
+    momentShorted.locale('en', {
       relativeTime: {
         future: 'in %s',
         past: '%s',
@@ -272,29 +169,117 @@
         y: '1y',
         yy: '%dy'
       }
-    })
+    });
 
     const companyCardList = document.getElementById('company-card-list');
 
     let companies = [];
+    let jobApplications = [];
+    let selectedCompany;
 
     async function fetchCompanies() {
-      await fetch('/assets/data/companies.json').then(response => response.json())
-        .then(data => {
-          companies = data;
-          displayCompanies(companies);
-        });
+      companies = await fetch('/assets/data/companies.json').then(response => response.json() || []);
     }
 
-    console.log(window.location);
-    window.addEventListener('urlChange', (e) => {
-      console.log(location);
-    });
+    async function fetchJobApplications() {
+      jobApplications = await fetch('/assets/data/job-applications.json').then(response => response.json()) || [];
+    }
 
+    async function fetchData(params) {
+      await fetchCompanies();
+      await fetchJobApplications();
+    }
 
-    async function displayCompanies(companies) {
+    function displaySelectedCompany(company) {
+      const companyDetails = document.getElementById('company-details');
+
+      let jobApplicationsToTheSelectedCompany = [];
+
+      if (selectedCompanyId && selectedCompanyId >= 1) {
+        jobApplicationsToTheSelectedCompany = jobApplications.filter(job => job.company_id === selectedCompanyId).sort((a, b) => {
+          return new Date(b.tracked_at) - new Date(a.tracked_at);
+        });
+      }
+
+      console.log(jobApplicationsToTheSelectedCompany);
+
+      companyDetails.innerHTML = `
+        <div class="content-header">
+          <img src="${company.img_url}" alt="" class="company-logo">
+          <div class="company-info">
+            <h2 class="company-name">
+              ${company.name}
+            </h2>
+            <p>
+              ${company.category} • ${company.location}
+            </p>
+          </div>
+          
+          <div class="actions">
+            <button class="btn">
+              <i class="icon" data-lucide="ellipsis"></i>
+            </button>
+          </div>
+        </div>
+        <div class="content-body">
+          <div class="card">
+            ${company.desc}
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">
+              Your Job Applications to ${company.name}
+            </h3>
+            <div id="your-applications-to-company-table-container">
+              <table class="table">
+                
+                <tbody id="your-applications-to-company-table-body">
+                  ${jobApplicationsToTheSelectedCompany.map(ja => `
+                    <tr>
+                      <td style="min-width: 150px">
+                        <a href="./application-details.html?id=${ja.id}" class="link">
+                          ${ja.job_title}
+                        </a>
+                      </td>
+                      <td style="min-width: 100px">
+                        <div class="status-badge status-badge-${ja.status}">
+                          ${ja.status}
+                        </div>
+                      </td>
+                      <td title="${moment(ja.tracked_at).format("lll")}" class="moment-from-now" style="min-width: 80px">
+                        ${moment(ja.tracked_at).fromNow()}
+                      </td>
+                      <td>
+                        <button class="btn" style="margin: auto">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="ellipsis" class="lucide lucide-ellipsis icon">
+                            <circle cx="12" cy="12" r="1"></circle>
+                            <circle cx="19" cy="12" r="1"></circle>
+                            <circle cx="5" cy="12" r="1"></circle>
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                    `).join('')
+        }
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      `;
+      lucide.createIcons();
+    }
+
+    function selectCompany(company_id) {
+      selectedCompany = companies.find(company => company.id === company_id);
+
+      displaySelectedCompany(selectedCompany);
+    }
+
+    async function displayData(companies) {
       companies.forEach(company => {
         const companyCard = document.createElement('div');
+        companyCard.id = `company-${company.id}`;
         companyCard.classList.add('company-card');
         companyCard.innerHTML = `
             <img src="${company.img_url}" alt="company">
@@ -310,28 +295,39 @@
               </p>
             </div>
             <p class="date">
-              ${moment(company.created_at).fromNow()}
+              ${momentShorted(company.created_at).fromNow()}
             </p>
         `;
 
         companyCard.addEventListener('click', (e) => {
-
-          // location.search = `id=${company.id}`;
+          // selectCompany(company.id);
           history.replaceState({}, '', `?id=${company.id}`);
           window.dispatchEvent(new Event('urlChange'));
-          // console.log(location);
-          console.log(`${company.name}`);
         });
 
         companyCardList.appendChild(companyCard);
       });
     }
 
-    fetchCompanies();
+    fetchData().then(() => {
+      displayData(companies);
+      selectCompany(selectedCompanyId);
+    });
+
+    window.addEventListener('urlChange', (e) => {
+      document.getElementById(`company-${selectedCompanyId}`).classList.remove('active');
+
+      urlParams = new URLSearchParams(window.location.search);
+      selectedCompanyId = Number(urlParams.get('id'));
+      // console.log({selectedCompanyId});
+
+      selectCompany(selectedCompanyId);
+      console.log({ selectedCompany });
+
+      document.getElementById(`company-${selectedCompanyId}`).classList.add('active');
+    });
   </script>
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide"></script>
   <script>
     lucide.createIcons();
   </script>
