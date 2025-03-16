@@ -12,9 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/application-details.css">
-  <!-- <link rel="stylesheet" href="./assets/css/app-details-styles.css"> -->
-  <!-- <link rel="stylesheet" href="./assets/css/sidebar.css"> -->
-  <!-- <link rel="stylesheet" href="./assets/css/base-layout.css"> -->
+  <link rel="stylesheet" href="./assets/css/application-details-base.css">
   <!-- Uncomment this to use the components CSS -->
   <!-- <link rel="stylesheet" href="./assets/css/components.css"> -->
   <title>Application Details</title>
@@ -138,17 +136,24 @@
                           </div>
                       </div>
                       <div class="dropdown">
-                          <button class="btn-more" onclick="toggleDropdown()">
-                              <i class="fas fa-ellipsis-h"></i>
-                          </button>
-                          <div class="dropdown-menu" id="dropdownMenu">
-                              <ul>
-                                  <li><a href="#">List 1</a></li>
-                                  <li><a href="#">List 2</a></li>
-                                  <li><a href="#">List 3</a></li>
-                              </ul>
-                          </div>
-                      </div>
+                        <button class="btn-more" onclick="toggleDropdown()">
+                            <i class="icon" data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="dropdown-menu" id="dropdownMenu" style="display: none;">
+                            <ul>
+                                <li><a href="#">List 1</a></li>
+                                <li><a href="#">List 2</a></li>
+                                <li><a href="#">List 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        function toggleDropdown() {
+                            const dropdownMenu = document.getElementById('dropdownMenu');
+                            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+                        }
+                    </script>
                   </div>
                   
                   <div class="action-buttons">
@@ -241,6 +246,38 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
+  </script>
+  <script>
+    function toggleDropdown() {
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+
+    const sidebarTrigger = document.getElementById('sidebar-trigger');
+    const sidebarCloser = document.getElementById('sidebar-closer');
+
+    function openSidebar() {
+      sidebar.classList.add('sidebar-mobile-opened'); // Menambahkan kelas untuk membuka sidebar
+      overlay.style.display = 'block'; // Menampilkan overlay
+    }
+
+    sidebarTrigger.addEventListener('click', openSidebar); // Menambahkan event listener untuk membuka sidebar
+
+    function closeSidebar() {
+      overlay.style.display = 'none'; // Menyembunyikan overlay
+      sidebar.classList.remove('sidebar-mobile-opened'); // Menghapus kelas untuk menutup sidebar
+    }
+
+    sidebarCloser.addEventListener('click', closeSidebar); // Menambahkan event listener untuk menutup sidebar
+    overlay.addEventListener('click', closeSidebar); // Menambahkan event listener untuk menutup sidebar saat overlay diklik
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024) closeSidebar(); // Menutup sidebar jika lebar jendela >= 1024px
+    });
   </script>
   <script src="/assets/js/sidebar.js"></script>
 </body>
