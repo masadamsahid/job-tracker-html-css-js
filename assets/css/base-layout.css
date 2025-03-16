@@ -342,13 +342,13 @@ body {
   flex-direction: column;
   gap: 8px;
 
-  padding: 8px;
+  padding: 0;
   border-radius: 8px 8px 0 0;
 
   position: fixed;
   bottom: -100vh;
 
-  width: calc(100vw - 16px);
+  width: calc(100vw);
   height: 80vh;
 
   background-color: var(--bg-color);
@@ -362,6 +362,7 @@ body {
     justify-content: end;
     flex-direction: column;
     height: 10px;
+    padding-bottom: 10px;
     
     .handler {
       max-width: 80px;
@@ -370,6 +371,11 @@ body {
       background-color: var(--text-color-gray);
       border-radius: 200px;
     }
+  }
+
+  #drawer-content {
+    flex: 1;
+    overflow-y: auto;
   }
 
   &.opened {
