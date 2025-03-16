@@ -11,8 +11,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./assets/css/base-layout.css">
+  <link rel="stylesheet" href="./assets/css/application-details.css">
+  <link rel="stylesheet" href="./assets/css/app-details-styles.css">
+  <!-- <link rel="stylesheet" href="./assets/css/sidebar.css"> -->
+  <!-- <link rel="stylesheet" href="./assets/css/base-layout.css"> -->
   <!-- Uncomment this to use the components CSS -->
   <!-- <link rel="stylesheet" href="./assets/css/components.css"> -->
   <title>Application Details</title>
@@ -104,28 +106,112 @@
       </button>
     </aside>
 
-    <main class="content-container">
-      <div class="navbar">
-        <div class="actions-wrapper left-actions">
-          <button id="sidebar-trigger" href="#" class="action">
-            <i class="icon" data-lucide="panel-right-close"></i>
-          </button>
-          <!-- Write some code here to add additional left icon actions -->
-        </div>
-        <h1 class="page-title">Application Details</h1>
-        
-        <div class="actions-wrapper right-actions">
-          <!-- Write some code here to add additional right icon actions -->
-          <a href="#" class="action">
-            <i class="icon" data-lucide="plus"></i>
-          </a>
-        </div>
-      </div>
+        <!-- Konten Utama -->
+        <main class="content-container">
+          <!-- Header Card -->
+          <div class="job-header-card">
+              <div class="company-info">
+                  <div class="logo-title">
+                      <img src="./assets/img/company-logo.png" alt="ABC Company" class="company-logo">
+                      <div class="title-section">
+                          <h2>ABC Company</h2>
+                          <h3 class="job-title">Software Engineer</h3>
+                          <p class="job-meta">at ABC Company • applied 3 days ago</p>
+                      </div>
+                  </div>
+                  <div class="dropdown">
+                      <button class="btn-more" onclick="toggleDropdown()">
+                          <i class="fas fa-ellipsis-h"></i>
+                      </button>
+                      <div class="dropdown-menu" id="dropdownMenu">
+                          <ul>
+                              <li><a href="#">List 1</a></li>
+                              <li><a href="#">List 2</a></li>
+                              <li><a href="#">List 3</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="action-buttons">
+                  <button class="btn-secondary">Go to Job Link</button>
+                  <button class="btn-primary">Simulate an Interview</button>
+              </div>
+          </div>
 
-      <div class="content">
-        <h1 style="height: 200vh;">Page Content</h1> <!-- TODO: Change this line to the content you want to build -->
-      </div>
-    </main>
+          <!-- Job Description Card -->
+          <div class="job-description-card">
+              <h3>Job Description</h3>
+              <div class="description-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a neque convallis, sollicitudin libero sit amet, pharetra ante. Vivamus auctor, mauris at maximus sagittis, eros urna aliquet quam, at luctus nulla sapien nec nisi. Vestibulum mi nulla, molestie a scelerisque quis, ultrices a lorem. Praesent ultrices nibh quis risus dictum dapibus. Aenean at quam scelerisque, consequat metus ac, commodo odio. </p>
+
+                  <br><p>Donec sit amet mi euismod, finibus odio a, mollis nibh. Morbi id quam commodo, maximus urna sed, efficitur quam. Curabitur bibendum, dui in fermentum molestie, augue purus semper tortor, vel consectetur ligula sapien non ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ac tristique sem. Duis tristique libero sit amet ante facilisis, nec aliquet lacus ornare. Nulla a turpis id risus dictum ornare in non dui. Phasellus tempus pretium lacus id elementum.</p>
+                      
+                  <br><p>Etiam eget tempus ex, in dictum est. Cras sed molestie leo. Vivamus faucibus egestas felis, nec vulputate tortor convallis in. Mauris dignissim pulvinar enim, nec laoreet eros suscipit non. Vestibulum non iaculis eros. Suspendisse pulvinar dui mi, eget vehicula nisl eleifend id. Nullam et porta libero, vel eleifend est. Suspendisse potenti..</p>
+          </p>
+                  <ul>
+                      <li>Sed feugiat libero eu tincidunt cursus.</li>
+                      <li>Proin ac risus fringilla, tempus ligula id, maximus neque.</li>
+                      <li>Sed feugiat libero eu tincidunt cursus.</li>
+                      <li>Sed feugiat libero eu tincidunt cursus.</li>
+                      <li>Proin ac risus fringilla, tempus ligula id, maximus neque.</li>
+                      <li>Sed feugiat libero eu tincidunt cursus.</li>
+
+                  </ul>
+                  <p>Proin ac risus fringilla, tempus ligula id, maximus neque.
+                      Aliquam facilisis sapien non ex maximus, in lacinia nisl tempus.
+                      Nullam id enim ut tellus consectetur dignissim.
+                      Fusce molestie nunc vel metus feugiat, at maximus orci vulputate.
+                      Integer vel justo scelerisque dui ornare scelerisque.
+                      
+                      Phasellus ac tristique sem. Duis tristique libero sit amet ante facilisis, nec aliquet lacus ornare. Nulla a turpis id risus dictum ornare in non dui.</p>
+
+              </div>
+          </div>
+      </main>
+
+      <!-- Sidebar Kanan -->
+      <aside class="content-side">
+          <h2 class="side-header">Your Job Snapshot</h2>
+          
+          <!-- Key points section -->
+          <div class="snapshot-section">
+              <div class="section-header">
+                  <span class="icon">✨</span>
+                  <h3>Key points of this job</h3>
+              </div>
+              <ul class="snapshot-list">
+                  <li>Sed feugiat libero eu tincidunt cursus.</li>
+                  <li>Proin ac risus fringilla, tempus ligula id, maximus neque.</li>
+                  <li>Aliquam facilisis sapien non ex maximus, in lacinia nisl tempus.</li>
+                  <li>Nullam id enim ut tellus consectetur dignissim.</li>
+                  <li>Fusce molestie nunc vel metus feugiat, at maximus orci vulputate.</li>
+                  <li>Integer vel justo scelerisque dui ornare scelerisque.</li>
+              </ul>
+              <p class="additional-text">
+                  Phasellus ac tristique sem. Duis tristique libero sit amet ante facilisis, nec aliquet
+                  lacus ornare. Nulla a turpis id risus dictum ornare in non dui.
+              </p>
+          </div>
+
+          <!-- What you can improve section -->
+          <div class="snapshot-section">
+              <div class="section-header">
+                  <span class="icon">🚀</span>
+                  <h3>What you can improve</h3>
+              </div>
+              <ul class="snapshot-list">
+                  <li>Sed feugiat libero eu tincidunt cursus.</li>
+                  <li>Proin ac risus fringilla, tempus ligula id, maximus neque.</li>
+                  <li>Aliquam facilisis sapien non ex maximus, in lacinia nisl tempus.</li>
+                  <li>Nullam id enim ut tellus consectetur dignissim.</li>
+                  <li>Fusce molestie nunc vel metus feugiat, at maximus orci vulputate.</li>
+                  <li>Integer vel justo scelerisque dui ornare scelerisque.</li>
+              </ul>
+          </div>
+
+          <button class="btn-regenerate">Regenerate</button>
+      </aside>
   </div>
 
   <div id="overlay"></div>
