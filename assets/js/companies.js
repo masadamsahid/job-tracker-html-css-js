@@ -138,6 +138,11 @@ async function displayData(companies) {
     const companyCard = document.createElement('div');
     companyCard.id = `company-${company.id}`;
     companyCard.classList.add('company-card');
+    
+    if(company.id === selectedCompanyId) {
+      companyCard.classList.add('active');
+    }
+
     companyCard.innerHTML = `
         <img src="${company.img_url}" alt="company">
         <div class="company-info">

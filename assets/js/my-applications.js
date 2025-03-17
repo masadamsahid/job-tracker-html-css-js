@@ -33,7 +33,11 @@ function displayJobApplicationsData(jobApplications) {
             ${id}
           </p>
         </td>
-        <td class="text-left">${company.name}</td>
+        <td class="text-left">
+          <a href="./companies.html?id=${company_id}" class="link">
+            ${company.name}
+          </a>
+        </td>
         <td>
           <a href="./application-details.html?id=${id}" class="link">
             ${job_title}
