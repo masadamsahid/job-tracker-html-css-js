@@ -15,6 +15,7 @@
 }
 
 #application-table-container {
+  margin-top: 16px;
   overflow-x: auto;
   
   -ms-overflow-style: none;  /* Internet Explorer 10+ */

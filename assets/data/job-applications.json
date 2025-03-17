@@ -3,8 +3,8 @@
     "id": 1,
     "company_id": 1,
     "job_title": "Software Engineer",
-    "status": "applied",
-    "tracked_at": "2023-10-26T10:00:00Z",
+    "status": "interview",
+    "tracked_at": "2025-01-26T10:00:00Z",
     "job_description": "Develop and maintain software applications.",
     "job_link_url": "https://example.com/job1"
   },
@@ -12,8 +12,8 @@
     "id": 2,
     "company_id": 2,
     "job_title": "Data Scientist",
-    "status": "interview",
-    "tracked_at": "2023-10-27T11:30:00Z",
+    "status": "listed",
+    "tracked_at": "2025-01-27T11:30:00Z",
     "job_description": "Analyze data to derive insights.",
     "job_link_url": "https://example.com/job2"
   },
@@ -21,8 +21,8 @@
     "id": 3,
     "company_id": 3,
     "job_title": "Product Manager",
-    "status": "listed",
-    "tracked_at": "2023-10-28T14:00:00Z",
+    "status": "rejected",
+    "tracked_at": "2025-01-28T14:00:00Z",
     "job_description": "Define and manage product roadmaps.",
     "job_link_url": "https://example.com/job3"
   },
@@ -30,8 +30,8 @@
     "id": 4,
     "company_id": 4,
     "job_title": "UX Designer",
-    "status": "rejected",
-    "tracked_at": "2023-10-29T09:15:00Z",
+    "status": "applied",
+    "tracked_at": "2025-01-29T09:15:00Z",
     "job_description": "Design user-friendly interfaces.",
     "job_link_url": "https://example.com/job4"
   },
@@ -39,8 +39,8 @@
     "id": 5,
     "company_id": 5,
     "job_title": "Marketing Specialist",
-    "status": "accepted",
-    "tracked_at": "2023-10-30T16:45:00Z",
+    "status": "interview",
+    "tracked_at": "2025-01-30T16:45:00Z",
     "job_description": "Develop and execute marketing campaigns.",
     "job_link_url": "https://example.com/job5"
   },
@@ -48,8 +48,8 @@
     "id": 6,
     "company_id": 6,
     "job_title": "Frontend Developer",
-    "status": "applied",
-    "tracked_at": "2023-11-01T12:00:00Z",
+    "status": "rejected",
+    "tracked_at": "2025-02-01T12:00:00Z",
     "job_description": "Build user interfaces for web applications.",
     "job_link_url": "https://example.com/job6"
   },
@@ -57,8 +57,8 @@
     "id": 7,
     "company_id": 7,
     "job_title": "Backend Developer",
-    "status": "interview",
-    "tracked_at": "2023-11-02T13:30:00Z",
+    "status": "accepted",
+    "tracked_at": "2025-02-02T13:30:00Z",
     "job_description": "Develop server-side logic and APIs.",
     "job_link_url": "https://example.com/job7"
   },
@@ -66,8 +66,8 @@
     "id": 8,
     "company_id": 8,
     "job_title": "Data Analyst",
-    "status": "listed",
-    "tracked_at": "2023-11-03T15:00:00Z",
+    "status": "applied",
+    "tracked_at": "2025-02-03T15:00:00Z",
     "job_description": "Analyze data to identify trends and patterns.",
     "job_link_url": "https://example.com/job8"
   },
@@ -75,8 +75,8 @@
     "id": 9,
     "company_id": 9,
     "job_title": "UI Designer",
-    "status": "rejected",
-    "tracked_at": "2023-11-04T10:15:00Z",
+    "status": "listed",
+    "tracked_at": "2025-02-04T10:15:00Z",
     "job_description": "Design visual elements for user interfaces.",
     "job_link_url": "https://example.com/job9"
   },
@@ -84,8 +84,8 @@
     "id": 10,
     "company_id": 10,
     "job_title": "Sales Representative",
-    "status": "accepted",
-    "tracked_at": "2023-11-05T17:45:00Z",
+    "status": "applied",
+    "tracked_at": "2025-02-05T17:45:00Z",
     "job_description": "Sell products and services to customers.",
     "job_link_url": "https://example.com/job10"
   },
@@ -93,8 +93,8 @@
     "id": 11,
     "company_id": 1,
     "job_title": "Senior Software Engineer",
-    "status": "applied",
-    "tracked_at": "2023-11-06T09:00:00Z",
+    "status": "rejected",
+    "tracked_at": "2025-02-06T09:00:00Z",
     "job_description": "Lead software development projects.",
     "job_link_url": "https://example.com/job11"
   },
@@ -102,8 +102,8 @@
     "id": 12,
     "company_id": 2,
     "job_title": "Machine Learning Engineer",
-    "status": "interview",
-    "tracked_at": "2023-11-07T10:30:00Z",
+    "status": "accepted",
+    "tracked_at": "2025-02-07T10:30:00Z",
     "job_description": "Develop machine learning models.",
     "job_link_url": "https://example.com/job12"
   },
@@ -111,8 +111,8 @@
     "id": 13,
     "company_id": 3,
     "job_title": "Technical Product Manager",
-    "status": "listed",
-    "tracked_at": "2023-11-08T13:00:00Z",
+    "status": "interview",
+    "tracked_at": "2025-02-08T13:00:00Z",
     "job_description": "Manage technical product roadmaps.",
     "job_link_url": "https://example.com/job13"
   },
@@ -120,8 +120,8 @@
     "id": 14,
     "company_id": 4,
     "job_title": "Interaction Designer",
-    "status": "rejected",
-    "tracked_at": "2023-11-09T08:15:00Z",
+    "status": "listed",
+    "tracked_at": "2025-02-09T08:15:00Z",
     "job_description": "Design interactive user experiences.",
     "job_link_url": "https://example.com/job14"
   },
@@ -129,8 +129,8 @@
     "id": 15,
     "company_id": 5,
     "job_title": "Digital Marketing Manager",
-    "status": "accepted",
-    "tracked_at": "2023-11-10T15:45:00Z",
+    "status": "applied",
+    "tracked_at": "2025-02-10T15:45:00Z",
     "job_description": "Manage digital marketing campaigns.",
     "job_link_url": "https://example.com/job15"
   },
@@ -138,8 +138,8 @@
     "id": 16,
     "company_id": 6,
     "job_title": "React Developer",
-    "status": "applied",
-    "tracked_at": "2023-11-11T11:00:00Z",
+    "status": "rejected",
+    "tracked_at": "2025-02-11T11:00:00Z",
     "job_description": "Develop React-based applications.",
     "job_link_url": "https://example.com/job16"
   },
@@ -147,8 +147,8 @@
     "id": 17,
     "company_id": 7,
     "job_title": "Node.js Developer",
-    "status": "interview",
-    "tracked_at": "2023-11-12T12:30:00Z",
+    "status": "accepted",
+    "tracked_at": "2025-02-12T12:30:00Z",
     "job_description": "Develop Node.js-based APIs.",
     "job_link_url": "https://example.com/job17"
   },
@@ -156,8 +156,8 @@
     "id": 18,
     "company_id": 8,
     "job_title": "Business Analyst",
-    "status": "listed",
-    "tracked_at": "2023-11-13T14:00:00Z",
+    "status": "interview",
+    "tracked_at": "2025-02-13T14:00:00Z",
     "job_description": "Analyze business processes and requirements.",
     "job_link_url": "https://example.com/job18"
   },
@@ -165,8 +165,8 @@
     "id": 19,
     "company_id": 9,
     "job_title": "Visual Designer",
-    "status": "rejected",
-    "tracked_at": "2023-11-14T09:15:00Z",
+    "status": "applied",
+    "tracked_at": "2025-02-14T09:15:00Z",
     "job_description": "Create visual designs for marketing materials.",
     "job_link_url": "https://example.com/job19"
   },
@@ -175,7 +175,7 @@
     "company_id": 10,
     "job_title": "Account Manager",
     "status": "accepted",
-    "tracked_at": "2023-11-15T16:45:00Z",
+    "tracked_at": "2025-02-15T16:45:00Z",
     "job_description": "Manage client accounts and relationships.",
     "job_link_url": "https://example.com/job20"
   },
@@ -184,7 +184,7 @@
     "company_id": 1,
     "job_title": "Lead Software Engineer",
     "status": "applied",
-    "tracked_at": "2023-11-16T10:00:00Z",
+    "tracked_at": "2025-02-16T10:00:00Z",
     "job_description": "Lead and mentor a team of software engineers.",
     "job_link_url": "https://example.com/job21"
   },
@@ -193,7 +193,7 @@
     "company_id": 2,
     "job_title": "AI Researcher",
     "status": "interview",
-    "tracked_at": "2023-11-17T11:30:00Z",
+    "tracked_at": "2025-02-17T11:30:00Z",
     "job_description": "Conduct research in artificial intelligence.",
     "job_link_url": "https://example.com/job22"
   },
@@ -202,7 +202,7 @@
     "company_id": 3,
     "job_title": "Product Owner",
     "status": "listed",
-    "tracked_at": "2023-11-18T14:00:00Z",
+    "tracked_at": "2025-02-18T14:00:00Z",
     "job_description": "Manage product backlogs and sprints.",
     "job_link_url": "https://example.com/job23"
   },
@@ -211,7 +211,7 @@
     "company_id": 4,
     "job_title": "User Researcher",
     "status": "rejected",
-    "tracked_at": "2023-11-19T09:15:00Z",
+    "tracked_at": "2025-02-19T09:15:00Z",
     "job_description": "Conduct user research to inform design decisions.",
     "job_link_url": "https://example.com/job24"
   },
@@ -220,7 +220,7 @@
     "company_id": 5,
     "job_title": "Content Marketing Manager",
     "status": "accepted",
-    "tracked_at": "2023-11-20T16:45:00Z",
+    "tracked_at": "2025-02-20T16:45:00Z",
     "job_description": "Manage content marketing strategies.",
     "job_link_url": "https://example.com/job25"
   },
@@ -229,7 +229,7 @@
     "company_id": 6,
     "job_title": "Angular Developer",
     "status": "applied",
-    "tracked_at": "2023-11-21T12:00:00Z",
+    "tracked_at": "2025-02-21T12:00:00Z",
     "job_description": "Develop Angular-based applications.",
     "job_link_url": "https://example.com/job26"
   },
@@ -238,7 +238,7 @@
     "company_id": 7,
     "job_title": "Python Developer",
     "status": "interview",
-    "tracked_at": "2023-11-22T13:30:00Z",
+    "tracked_at": "2025-02-22T13:30:00Z",
     "job_description": "Develop Python-based applications and APIs.",
     "job_link_url": "https://example.com/job27"
   },
@@ -247,7 +247,7 @@
     "company_id": 8,
     "job_title": "Financial Analyst",
     "status": "listed",
-    "tracked_at": "2023-11-23T15:00:00Z",
+    "tracked_at": "2025-02-23T15:00:00Z",
     "job_description": "Analyze financial data and provide insights.",
     "job_link_url": "https://example.com/job28"
   },
@@ -256,7 +256,7 @@
     "company_id": 9,
     "job_title": "Graphic Designer",
     "status": "rejected",
-    "tracked_at": "2023-11-24T10:15:00Z",
+    "tracked_at": "2025-02-24T10:15:00Z",
     "job_description": "Create graphics for marketing and branding.",
     "job_link_url": "https://example.com/job29"
   },
@@ -265,7 +265,7 @@
     "company_id": 10,
     "job_title": "Customer Success Manager",
     "status": "accepted",
-    "tracked_at": "2023-11-25T17:45:00Z",
+    "tracked_at": "2025-02-25T17:45:00Z",
     "job_description": "Ensure customer satisfaction and success.",
     "job_link_url": "https://example.com/job30"
   },
@@ -274,7 +274,7 @@
     "company_id": 1,
     "job_title": "Principal Software Engineer",
     "status": "applied",
-    "tracked_at": "2023-11-26T09:00:00Z",
+    "tracked_at": "2025-02-26T09:00:00Z",
     "job_description": "Architect and design complex software systems.",
     "job_link_url": "https://example.com/job31"
   },
@@ -283,7 +283,7 @@
     "company_id": 2,
     "job_title": "Deep Learning Engineer",
     "status": "interview",
-    "tracked_at": "2023-11-27T10:30:00Z",
+    "tracked_at": "2025-02-27T10:30:00Z",
     "job_description": "Develop deep learning models and algorithms.",
     "job_link_url": "https://example.com/job32"
   },
@@ -292,7 +292,7 @@
     "company_id": 3,
     "job_title": "Growth Product Manager",
     "status": "listed",
-    "tracked_at": "2023-11-28T13:00:00Z",
+    "tracked_at": "2025-02-28T13:00:00Z",
     "job_description": "Focus on product growth and user acquisition.",
     "job_link_url": "https://example.com/job33"
   },
@@ -301,7 +301,7 @@
     "company_id": 4,
     "job_title": "Accessibility Specialist",
     "status": "rejected",
-    "tracked_at": "2023-11-29T08:15:00Z",
+    "tracked_at": "2025-02-21T08:15:00Z",
     "job_description": "Ensure products are accessible to all users.",
     "job_link_url": "https://example.com/job34"
   },
@@ -310,7 +310,7 @@
     "company_id": 5,
     "job_title": "Social Media Manager",
     "status": "accepted",
-    "tracked_at": "2023-11-30T15:45:00Z",
+    "tracked_at": "2025-02-28T15:45:00Z",
     "job_description": "Manage social media presence and campaigns.",
     "job_link_url": "https://example.com/job35"
   },
@@ -319,7 +319,7 @@
     "company_id": 6,
     "job_title": "Vue.js Developer",
     "status": "applied",
-    "tracked_at": "2023-12-01T11:00:00Z",
+    "tracked_at": "2025-03-01T11:00:00Z",
     "job_description": "Develop Vue.js-based applications.",
     "job_link_url": "https://example.com/job36"
   },
@@ -328,7 +328,7 @@
     "company_id": 7,
     "job_title": "Java Developer",
     "status": "interview",
-    "tracked_at": "2023-12-02T12:30:00Z",
+    "tracked_at": "2025-03-02T12:30:00Z",
     "job_description": "Develop Java-based applications and APIs.",
     "job_link_url": "https://example.com/job37"
   },
@@ -337,7 +337,7 @@
     "company_id": 8,
     "job_title": "Risk Analyst",
     "status": "listed",
-    "tracked_at": "2023-12-03T14:00:00Z",
+    "tracked_at": "2025-03-03T14:00:00Z",
     "job_description": "Assess and manage financial risks.",
     "job_link_url": "https://example.com/job38"
   },
@@ -346,7 +346,7 @@
     "company_id": 9,
     "job_title": "Motion Graphic Designer",
     "status": "rejected",
-    "tracked_at": "2023-12-04T09:15:00Z",
+    "tracked_at": "2025-03-04T09:15:00Z",
     "job_description": "Create motion graphics for videos and animations.",
     "job_link_url": "https://example.com/job39"
   },
@@ -355,7 +355,7 @@
     "company_id": 10,
     "job_title": "Technical Account Manager",
     "status": "accepted",
-    "tracked_at": "2023-12-05T16:45:00Z",
+    "tracked_at": "2025-03-05T16:45:00Z",
     "job_description": "Provide technical support and manage client accounts.",
     "job_link_url": "https://example.com/job40"
   },
@@ -364,7 +364,7 @@
     "company_id": 1,
     "job_title": "Cloud Architect",
     "status": "applied",
-    "tracked_at": "2023-12-06T10:00:00Z",
+    "tracked_at": "2025-03-06T10:00:00Z",
     "job_description": "Design and implement cloud-based solutions.",
     "job_link_url": "https://example.com/job41"
   },
@@ -373,7 +373,7 @@
     "company_id": 2,
     "job_title": "NLP Engineer",
     "status": "interview",
-    "tracked_at": "2023-12-07T11:30:00Z",
+    "tracked_at": "2025-03-07T11:30:00Z",
     "job_description": "Develop natural language processing models.",
     "job_link_url": "https://example.com/job42"
   },
@@ -382,7 +382,7 @@
     "company_id": 3,
     "job_title": "Platform Product Manager",
     "status": "listed",
-    "tracked_at": "2023-12-08T14:00:00Z",
+    "tracked_at": "2025-03-08T14:00:00Z",
     "job_description": "Manage platform-level product initiatives.",
     "job_link_url": "https://example.com/job43"
   },
@@ -391,7 +391,7 @@
     "company_id": 4,
     "job_title": "Information Architect",
     "status": "rejected",
-    "tracked_at": "2023-12-09T09:15:00Z",
+    "tracked_at": "2025-03-09T09:15:00Z",
     "job_description": "Organize and structure information for user interfaces.",
     "job_link_url": "https://example.com/job44"
   },
@@ -400,7 +400,7 @@
     "company_id": 5,
     "job_title": "SEO Specialist",
     "status": "accepted",
-    "tracked_at": "2023-12-10T16:45:00Z",
+    "tracked_at": "2025-03-10T16:45:00Z",
     "job_description": "Optimize websites for search engines.",
     "job_link_url": "https://example.com/job45"
   },
@@ -409,7 +409,7 @@
     "company_id": 6,
     "job_title": "TypeScript Developer",
     "status": "applied",
-    "tracked_at": "2023-12-11T12:00:00Z",
+    "tracked_at": "2025-03-11T12:00:00Z",
     "job_description": "Develop TypeScript-based applications.",
     "job_link_url": "https://example.com/job46"
   },
@@ -418,7 +418,7 @@
     "company_id": 7,
     "job_title": "C++ Developer",
     "status": "interview",
-    "tracked_at": "2023-12-12T13:30:00Z",
+    "tracked_at": "2025-03-12T13:30:00Z",
     "job_description": "Develop C++-based applications and systems.",
     "job_link_url": "https://example.com/job47"
   },
@@ -427,7 +427,7 @@
     "company_id": 8,
     "job_title": "Compliance Analyst",
     "status": "listed",
-    "tracked_at": "2023-12-13T15:00:00Z",
+    "tracked_at": "2025-03-13T15:00:00Z",
     "job_description": "Ensure compliance with regulations and policies.",
     "job_link_url": "https://example.com/job48"
   },
@@ -436,7 +436,7 @@
     "company_id": 9,
     "job_title": "3D Artist",
     "status": "rejected",
-    "tracked_at": "2023-12-14T10:15:00Z",
+    "tracked_at": "2025-03-14T10:15:00Z",
     "job_description": "Create 3D models and animations.",
     "job_link_url": "https://example.com/job49"
   },
@@ -445,7 +445,7 @@
     "company_id": 10,
     "job_title": "Solutions Architect",
     "status": "accepted",
-    "tracked_at": "2023-12-15T17:45:00Z",
+    "tracked_at": "2025-03-15T17:45:00Z",
     "job_description": "Design and implement technical solutions for clients.",
     "job_link_url": "https://example.com/job50"
   }

@@ -3,70 +3,100 @@
     "id": 1,
     "name": "Google",
     "location": "Mountain View, CA",
+    "category": "Software Development",
     "url_link": "https://www.google.com/careers/",
-    "created_at": "2023-10-26T00:00:00Z"
+    "img_url": "./assets/data/img/company-logos/google_logo.jpeg",
+    "created_at": "2024-10-26T00:00:00Z",
+    "desc": "<p>Google, a subsidiary of Alphabet Inc., is a multinational technology company renowned for its search engine, online advertising technologies, cloud computing, software, and hardware. It stands as a global leader in innovation, shaping the digital landscape with products like Google Search, Android, YouTube, and Google Cloud.</p><p>The company's mission is to organize the world's information and make it universally accessible and useful. Google's impact extends across various sectors, from artificial intelligence and machine learning to consumer electronics and enterprise solutions. With a strong emphasis on research and development, Google continues to push the boundaries of technology, aiming to solve complex problems and improve the lives of billions.</p><p>Google's culture is known for its emphasis on innovation, collaboration, and a data-driven approach. It fosters an environment where employees are encouraged to think creatively and take risks, contributing to groundbreaking advancements in technology.</p>"
   },
   {
     "id": 2,
     "name": "TikTok",
     "location": "Los Angeles, CA",
+    "category": "Entertainment Providers",
     "url_link": "https://careers.tiktok.com/",
-    "created_at": "2023-10-27T00:00:00Z"
+    "img_url": "./assets/data/img/company-logos/tiktok_logo.jpeg",
+    "created_at": "2024-10-27T00:00:00Z",
+    "desc": "<p>TikTok is a global short-form video platform that has revolutionized social media with its engaging and creative content. Owned by ByteDance, it allows users to create, share, and discover short videos, often set to music, using a wide array of filters and effects.</p><p>TikTok's rapid growth has made it a cultural phenomenon, particularly among younger audiences. The platform's algorithm-driven feed ensures that users are constantly presented with content tailored to their interests, fostering a dynamic and personalized experience. It has become a hub for trends, challenges, and viral content, influencing music, fashion, and entertainment.</p><p>The company's innovative approach to content creation and distribution has disrupted traditional media, making it a key player in the digital entertainment industry. TikTok continues to expand its features and reach, solidifying its position as a leading social media platform.</p>"
   },
   {
     "id": 3,
     "name": "Gojek",
     "location": "Jakarta, Indonesia",
+    "category": "Software Development",
     "url_link": "https://www.gojek.com/careers/",
-    "created_at": "2023-10-28T00:00:00Z"
+    "img_url": "./assets/data/img/company-logos/gojek_logo.jpeg",
+    "created_at": "2024-10-28T00:00:00Z",
+    "desc": "<p>Gojek is a Southeast Asian super app that provides a wide range of services, including ride-hailing, food delivery, logistics, and digital payments. Originating in Indonesia, Gojek has become a dominant player in the region's digital economy, connecting millions of users with a vast network of service providers.</p><p>The company's integrated platform offers a seamless experience, allowing users to access various services through a single app. Gojek's impact extends beyond convenience, as it has empowered millions of small businesses and drivers, contributing to economic growth and financial inclusion. It has also pioneered innovative solutions to address urban challenges, such as traffic congestion and access to essential services.</p><p>Gojek's commitment to innovation and social impact has solidified its position as a leading technology company in Southeast Asia. It continues to expand its offerings and geographical reach, aiming to improve the lives of millions through technology.</p>"
   },
   {
     "id": 4,
     "name": "Airbnb",
     "location": "San Francisco, CA",
+    "category": "Software Development",
     "url_link": "https://careers.airbnb.com/",
-    "created_at": "2023-10-29T00:00:00Z"
+    "img_url": "./assets/data/img/company-logos/airbnb_logo.jpeg",
+    "created_at": "2024-10-29T00:00:00Z",
+    "desc": "<p>Airbnb is a global online marketplace that connects travelers with hosts offering unique accommodations and experiences. It has transformed the travel industry by providing an alternative to traditional hotels, allowing travelers to stay in homes, apartments, and other unique properties around the world.</p><p>The company's platform fosters a sense of community and connection, enabling travelers to experience local cultures and lifestyles. Airbnb's impact extends beyond travel, as it has also created economic opportunities for hosts and contributed to local economies. It has become a symbol of the sharing economy, promoting sustainable and authentic travel experiences.</p><p>Airbnb continues to innovate and expand its offerings, including experiences and adventures, aiming to provide travelers with unforgettable journeys. Its focus on user experience and community building has solidified its position as a leading player in the travel and hospitality industry.</p>"
   },
   {
     "id": 5,
     "name": "Spotify",
     "location": "Stockholm, Sweden",
+    "category": "Musicians",
     "url_link": "https://www.lifeatspotify.com/",
-    "created_at": "2023-10-30T00:00:00Z"
+    "img_url": "./assets/data/img/company-logos/spotify_logo.jpeg",
+    "created_at": "2024-10-30T00:00:00Z",
+    "desc": "<p>Spotify is a leading digital music, podcast, and video streaming service that provides access to millions of songs and other content from creators all over the world. It has revolutionized the music industry by offering a convenient and personalized way to discover and listen to music.</p><p>The platform's vast library and intelligent algorithms enable users to create playlists, discover new artists, and listen to podcasts tailored to their interests. Spotify's impact extends beyond music, as it has also become a major player in the podcasting industry, providing a platform for creators to reach a global audience. It has changed the way people consume audio entertainment.</p><p>Spotify's commitment to innovation and user experience has solidified its position as a leading streaming service. It continues to expand its offerings and partnerships, aiming to provide users with the best possible audio experience.</p>"
   },
   {
     "id": 6,
     "name": "Netflix",
     "location": "Los Gatos, CA",
+    "category": "Entertainment Providers",
     "url_link": "https://jobs.netflix.com/",
-    "created_at": "2023-11-01T00:00:00Z"
+    "img_url": "./assets/data/img/company-logos/netflix_logo.jpeg",
+    "created_at": "2024-11-01T00:00:00Z",
+    "desc": "<p>Netflix is a leading streaming entertainment service offering a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. It has transformed the way people consume entertainment, providing on-demand access to a vast library of content.</p><p>The company's focus on original content has made it a major player in the production of high-quality TV shows and movies. Netflix's impact extends beyond entertainment, as it has also influenced cultural trends and storytelling. It has become a symbol of the streaming revolution, providing a convenient and personalized viewing experience.</p><p>Netflix continues to invest in original content and expand its global reach, aiming to provide its subscribers with the best possible entertainment experience. Its data-driven approach and commitment to innovation have solidified its position as a leading player in the streaming industry.</p>"
   },
   {
     "id": 7,
     "name": "Amazon",
     "location": "Seattle, WA",
+    "category": "Software Development",
     "url_link": "https://www.amazon.jobs/",
-    "created_at": "2023-11-02T00:00:00Z"
+    "img_url": "./assets/data/img/company-logos/amazon_logo.jpeg",
+    "created_at": "2024-11-02T00:00:00Z",
+    "desc": "<p>Amazon is a multinational technology company that focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. It has become one of the world's most influential economic and cultural forces, providing a wide range of products and services to millions of customers worldwide.</p><p>The company's e-commerce platform offers a vast selection of products, from books and electronics to groceries and clothing. Amazon's cloud computing division, Amazon Web Services (AWS), is a leading provider of cloud infrastructure and services. Its digital streaming services, such as Amazon Prime Video and Amazon Music, offer a wide range of entertainment options. Amazon has also made significant advancements in artificial intelligence, with products like Alexa and Echo , contributing to the development of innovative technologies.</p><p>Amazon's customer-centric approach and commitment to innovation have solidified its position as a leading technology company. It continues to expand its offerings and geographical reach, aiming to provide customers with the best possible shopping and entertainment experiences.</p>"
   },
   {
     "id": 8,
     "name": "JP Morgan Chase",
     "location": "New York, NY",
+    "category": "Financial Services",
     "url_link": "https://careers.jpmorgan.com/US/en",
-    "created_at": "2023-11-03T00:00:00Z"
+    "img_url": "./assets/data/img/company-logos/jpmorganchase_logo.jpeg",
+    "created_at": "2024-11-03T00:00:00Z",
+    "desc": "<p>JPMorgan Chase & Co. is a leading global financial services firm with assets of $3.7 trillion and operations worldwide. The firm is a leader in investment banking, financial services for consumers and small businesses, commercial banking, financial transaction processing, and asset management.</p><p>JPMorgan Chase serves millions of consumers in the United States and many of the world's most prominent corporate, institutional, and government clients. The firm is committed to operational excellence and technological innovation, investing heavily in digital platforms and solutions to enhance customer experience and streamline operations. It plays a crucial role in the global financial system.</p><p>The company's commitment to responsible business practices and community development is evident in its various initiatives and programs. JPMorgan Chase aims to create a positive impact by supporting economic growth, promoting financial health, and investing in sustainable solutions.</p>"
   },
   {
     "id": 9,
     "name": "Adobe",
     "location": "San Jose, CA",
+    "category": "Software Development",
     "url_link": "https://www.adobe.com/careers.html",
-    "created_at": "2023-11-04T00:00:00Z"
+    "img_url": "./assets/data/img/company-logos/adobe_logo.jpeg",
+    "created_at": "2024-11-04T00:00:00Z",
+    "desc": "<p>Adobe Inc. is a multinational software company renowned for its creative and multimedia software products. It is a leader in digital media and digital marketing solutions, empowering individuals and businesses to create, deliver, and optimize content and experiences.</p><p>The company's flagship products, such as Photoshop, Illustrator, and Premiere Pro, are industry standards in graphic design, photography, and video editing. Adobe's Creative Cloud platform provides access to a comprehensive suite of creative tools, enabling users to bring their ideas to life. Adobe also offers marketing and document solutions, including Adobe Experience Cloud and Adobe Document Cloud, catering to the needs of businesses across various industries.</p><p>Adobe's commitment to innovation and user experience has solidified its position as a leading software company. It continues to invest in research and development, aiming to provide users with cutting-edge tools and technologies.</p>"
   },
   {
     "id": 10,
     "name": "Salesforce",
     "location": "San Francisco, CA",
+    "category": "Software Development",
     "url_link": "https://www.salesforce.com/company/careers/",
-    "created_at": "2023-11-05T00:00:00Z"
+    "img_url": "./assets/data/img/company-logos/salesforce_logo.jpeg",
+    "created_at": "2024-11-05T00:00:00Z",
+    "desc": "<p>Salesforce is a leading cloud-based software company that provides customer relationship management (CRM) software and applications focused on sales, service, marketing automation, analytics, and application development. It has revolutionized the way businesses manage customer interactions and data.</p><p>The company's platform, Salesforce Customer 360, enables businesses to connect with their customers in a more personalized and efficient manner. Salesforce's impact extends beyond CRM, as it also offers solutions for e-commerce, collaboration, and artificial intelligence. It has become a key player in the digital transformation of businesses across various industries.</p><p>Salesforce's commitment to innovation and customer success has solidified its position as a leading cloud software company. It continues to expand its offerings and invest in emerging technologies, aiming to provide businesses with the tools they need to thrive in the digital age.</p>"
   }
 ]

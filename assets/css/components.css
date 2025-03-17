@@ -48,6 +48,7 @@
   .score {
     font-size: 24px;
     font-weight: 700;
+    color: var(--text-color);
   }
 
   .desc {
@@ -86,10 +87,9 @@
 }
 
 .table {
-  margin-top: 16px;
   width: 100%;
   border-collapse: separate;
-  border-spacing: 0 10px;
+  border-spacing: 0 8px;
 
   thead {
     * {
@@ -99,6 +99,10 @@
 
   tr:hover {
     background-color: rgba(0, 0, 0, .1);
+  }
+
+  td, th {
+    padding: 3px 10px;
   }
 
   tbody {
@@ -135,5 +139,37 @@
   &:hover {
     color: var(--primary-color);
     text-decoration: underline;
+  }
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid var(--outline-color);
+  padding: 16px;
+  gap: 8px;
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 400;
   }
 }
