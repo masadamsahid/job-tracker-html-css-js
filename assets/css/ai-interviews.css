@@ -203,6 +203,10 @@
         @media (max-width: 1024px) {
           max-width: 60%;
         }
+
+        @media (max-width: 640px) {
+          max-width: 70%;
+        }
       }
 
       .chat-bubble-ai {
