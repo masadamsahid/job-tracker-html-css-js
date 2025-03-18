@@ -1,0 +1,135 @@
+@import url('components.css');
+
+
+#add-company-form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 32px;
+  gap: 32px;
+
+  .form-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-illustration {
+      width: 213px;
+      height: 213px;
+    }
+
+    .form-title {
+      font-weight: 700;
+      font-size: 54px;
+    }
+
+    @media (max-width: 1024px) {      
+      .form-title {
+        font-size: 40px;
+      }
+
+      .form-illustration {
+        width: 190px;
+        height: 190px;
+      }
+    }
+    
+    @media (max-width: 640px) {
+      text-align: center;
+      flex-direction: column;
+
+      .form-title {
+        font-size: 28px;
+      }
+
+      .form-illustration {
+        width: 160px;
+        height: 160px;
+      }
+    }
+
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 16px;
+
+    @media (max-width: 640px) {
+      grid-template-columns: 100%;
+    }
+  }
+
+  .field-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .field-label {
+      font-size: 14px;
+      font-weight: 500;
+
+      &:has(~input:required, ~select:required) {
+        &::after {
+          content: ' *';
+          color: red;
+        }
+      }
+    }
+
+    .field-input {
+      padding: 8px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 400;
+      border: 1px solid var(--outline-color);
+
+      &[type='file'] {
+        font-style: italic;
+      }
+
+      &[type='file']::file-selector-button {
+        padding: 6px 16px;
+        border: none;
+        border-radius: 6px;
+        background-color: var(--primary-color);
+        font-size: 12px;
+        color: white;
+      }
+      
+      resize: vertical;
+    }
+    
+    .field-select {
+      padding: 8px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 400;
+      border: 1px solid var(--outline-color);
+
+      option {
+        font-size: 14px;
+        font-weight: 400;
+
+        &:checked {
+          background-color: var(--primary-color);
+          color: white;
+        }
+
+        &:hover {
+          background-color: var(--primary-color);
+          color: white;
+        }
+      }
+    }
+  }
+
+  .confirm-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+

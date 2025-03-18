@@ -138,6 +138,17 @@
   }
 }
 
+.btn-secondary {
+  background-color: white;
+  border: 1px solid var(--outline-color);
+
+  .icon {
+    stroke: var(--outline-color);
+  }
+}
+
+
+
 .text-center {text-align: center;}
 .text-left {text-align: left;}
 .text-right {text-align: right;}
@@ -182,4 +193,8 @@
     font-size: 12px;
     font-weight: 400;
   }
+}
+
+.text-primary {
+  color: var(--primary-color);
 }
