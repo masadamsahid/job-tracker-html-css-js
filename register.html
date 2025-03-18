@@ -30,7 +30,7 @@
         <div class="right-panel">
             <div>            
                 <div class="register-link">
-                    <a href="#" >Login</a>
+                    <a href="./login.html" >Login</a>
                 </div>
                 <div class="login-form">
                     <img src="assets/img/register-img.png" alt="Illustration" class="mobile-illustration">
@@ -41,7 +41,7 @@
                         <input class="placeholder" type="email" placeholder="name@example.com" required>
                         <input class="placeholder" type="password" placeholder="password" required>
                         <input class="placeholder" type="confirm-password" placeholder="confirm password" required>
-                        <button type="submit" class="btn-login">Register</button>
+                        <button type="submit" class="btn-login" onclick="register()">Register</button>
                     </form>
                     <p class="or">OR CONTINUE WITH</p>
                     <button class="btn-github"><i class="fab fa-github"></i> Github</button>
@@ -53,6 +53,11 @@
 
         </div>
     </div>
+    <script>
+        function register() {
+            window.location.replace("./my-applications.html")
+        }
+    </script>
 </body>
 </html>
 
