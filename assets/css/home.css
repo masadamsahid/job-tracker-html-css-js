@@ -200,19 +200,19 @@ section .reviews .review-main-title{
 .reviews .reviews-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 38px;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 .reviews .reviews-container .review-card{
     width: 360px;
-    height: 317px;
+    height: auto;
     border-radius: 12px;
     border: 2px solid #E4E4E7;
     box-shadow: 0px 1px #E4E4E7;
     margin-top: 53px;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 .reviews-container .review-card .review-profile{
@@ -297,6 +297,226 @@ section .pricing .pricing-main-title{
 
 .pricing .pricing-main-title span{
     color: green;
+}
+
+.pricing .pricing-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 38px;
+    /* overflow: scroll; */
+}
+
+.pricing .pricing-container .pricing-card{
+    width: 407.33px;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #E4E4E7;
+    box-shadow: 0px 1px #E4E4E7;
+    margin-top: 53px;
+    /* overflow: scroll; */
+}
+
+.pricing-container .pricing-card .pricing-header{
+    margin: 24px 0 40px 24px;
+}
+
+.pricing-card .pricing-header span{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.pricing-card .pricing-header p{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.pricing-card .pricing-header .pricing-subtitle{
+    font-size: 14px;
+    margin-top: 0;
+    margin-right: 24px;
+    color: #71717A;
+}
+
+.pricing-container .pricing-card .pricing-description{
+    margin: 24px 24px 30px 24px;
+}
+
+.pricing-card .pricing-description .pricing-pros{
+    display: flex;
+    flex-direction: row;
+    /* margin: 24px 0 62px 24px; */
+}
+
+.pricing-description .pricing-pros img{
+    width: 24px;
+    height: 24px;
+}
+
+.pricing-description .pricing-pros p{
+    margin-top: 0;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.pricing-card .pricing-description .pricing-cons{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    /* margin: 24px 0 62px 24px; */
+}
+
+.pricing-description .pricing-cons img{
+    width: 24px;
+    height: 24px;
+    color: #6b7280;
+}
+
+.pricing-description .pricing-cons p{
+    margin-top: 0;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #6b7280;
+}
+
+.pricing-card .pricing-description .pricing-button{
+    align-self: flex-start;
+}
+
+.pricing-description .pricing-button button{
+    height: 40px;
+    width: 359px;
+    font-size: 14px;
+    border-radius: 6px;
+    border-style: none;
+    background-color: green;
+    color: white;
+}
+
+.pricing-card .pricing-description #premium-button{
+    margin-top: 10px;
+}
+
+#ai, #suggestions, #cv{
+    margin-bottom: 10px;
+}
+
+section .faq .faq-main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 24px;
+    margin-top: 116px;
+}
+
+section .faq .faq-container{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-bottom: 153px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.faq-accordion{
+    width: 100%;
+}
+
+.accordion-label{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    display: block;
+    /* margin-left: auto; */
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.accordion-label.active{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    display: block;
+    /* margin-left: auto; */
+    cursor: pointer;
+}
+
+.accordion-label::after {
+    content: "+";
+    font-size: 18px;
+    margin-left: auto;
+}
+
+.accordion-content{
+    padding: 10px;
+    display: none;
+}
+
+.accordion-content.show{
+    display: block;
+}
+
+/* .faq-container .faq-accordion .accordion-label{
+    cursor: pointer;
+} */
+
+/* .faq-accordion .accordion-label::before{
+    content: "^";
+    position: absolute;
+    top: 80%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(50%);
+    color: black;
+} */
+
+footer{
+    background-color: green;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-bottom: 5px; */
+}
+
+/* footer .footer-container .footer-logo{
+    justify-content: center;
+    align-items: center;
+} */
+
+footer .footer-logo a{
+    text-decoration: none;
+}
+
+.footer-logo a h1{
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: bolder;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 0;
+}
+
+footer .footer-container .footer-description{
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+    color: white;
+}
+
+footer .footer-container .social-media{
+    margin-top: 16px;
+    margin-bottom: 27px;
+}
+
+.footer-container .social-media img{
+    margin: 0 5px;
 }
 
 @media(max-width: 834px){

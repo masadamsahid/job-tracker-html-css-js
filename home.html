@@ -173,19 +173,120 @@
       </section>
 
       <!-- Pricing -->
-      <!-- <section>
+      <section>
         <div class="pricing">
           <div class="pricing-main-title">
             <h1>Find the right plan to <span>enhance</span> your journey. </h1>
           </div>
           <div class="pricing-container">
-            <div class="pricing-card"></div>
+            <div class="pricing-card">
+              <div class="pricing-header">
+                <span>Free</span>
+                <p>Starter Plan</p>
+                <p class="pricing-subtitle">Begin your journey and manage you applications for free</p>
+              </div>
+              <div class="pricing-description">
+                <div class="pricing-pros">
+                  <img src="assets/images/badge-check.png" alt="Pros">
+                  <p>Track job applications up to 50 active applications</p>
+                </div>
+                <div class="pricing-pros">
+                  <img src="assets/images/badge-check.png" alt="Pros">
+                  <p>Archive any tracked applications anytime</p>
+                </div>
+                <div class="pricing-cons">
+                  <img src="assets/images/badge-x.png" alt="Cons">
+                  <p>Access to AI-Powered Interview Simulator</p>
+                </div>
+                <div class="pricing-cons">
+                  <img src="assets/images/badge-x.png" alt="Cons">
+                  <p>Personalized suggestions</p>
+                </div>
+                <div class="pricing-cons">
+                  <img src="assets/images/badge-x.png" alt="Cons">
+                  <p>CV/Resume reviews & examinations</p>
+                </div>
+                <div class="pricing-button">
+                  <button>Get Started</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-card">
+              <div class="pricing-header">
+                <span>IDR 50K/mo</span>
+                <p>Premium Plan</p>
+                <p class="pricing-subtitle">Boost your journey with our premium features and land your dream job</p>
+              </div>
+              <div class="pricing-description">
+                <div class="pricing-pros">
+                  <img src="assets/images/badge-check.png" alt="Pros">
+                  <p>Track job applications up to 50 active applications</p>
+                </div>
+                <div class="pricing-pros">
+                  <img src="assets/images/badge-check.png" alt="Pros">
+                  <p>Archive any tracked applications anytime</p>
+                </div>
+                <div class="pricing-pros" id="ai">
+                  <img src="assets/images/badge-check.png" alt="Pros">
+                  <p>Access to AI-Powered Interview Simulator</p>
+                </div>
+                <div class="pricing-pros" id="suggestions">
+                  <img src="assets/images/badge-check.png" alt="Pros">
+                  <p>Personalized suggestions</p>
+                </div>
+                <div class="pricing-pros" id="cv">
+                  <img src="assets/images/badge-check.png" alt="Pros">
+                  <p>CV/Resume reviews & examinations</p>
+                </div>
+                <div class="pricing-button" id="premium-button">
+                  <button>Get Started</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-      </section> -->
+      <!-- FAQ -->
+       <section>
+        <div class="faq">
+          <div class="faq-main-title">
+            <h1>Frequently Asked Questions</h1>
+          </div>
+          <div class="faq-container">
+            <div class="faq-accordion">
+              <div class="accordion-label">
+                Is it accessible?
+              </div>
+              <div class="accordion-content">
+                Yes. It adheres to the WAI-ARIA design pattern.
+              </div>
+              <!-- <hr> -->
+            </div>
+          </div>
+        </div>
+       </section>
     </main>
-
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="#">
+            <h1>LOGO</h1>
+          </a>
+        </div>
+        <div class="footer-description">
+          <p>Donec varius odio elit, nec egestas arcu volutpat id. Aenean aliquet tempor arcu, eu rhoncus nisl elementum et. Donec iaculis bibendum ultrices. Fusce aliquam ornare neque, quis tincidunt sapien.</p>
+          <p>Aenean vehicula lectus sapien, vel aliquet lectus aliquet eget. Suspendisse sit amet massa at mauris commodo vestibulum. Fusce viverra pharetra urna eget sagittis.</p>
+          <p>Cras imperdiet non felis in posuere.</p>
+        </div>
+        <div class="social-media">
+          <img src="assets/images/instagram.png" alt="Instagram">
+          <img src="assets/images/twitter.png" alt="Twitter">
+          <img src="assets/images/linkedin.png" alt="LinkedIn">
+        </div>
+      </div>
+    </footer>
 
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', () => {
@@ -205,6 +306,16 @@
           }
         });
       })
+
+      const accordionLabels = document.querySelectorAll('.accordion-label');
+
+      accordionLabels.forEach((label) => {
+        label.addEventListener('click', () => {
+          const content = label.nextElementSibling;
+          content.classList.toggle('show');
+          label.classList.toggle('active');
+        });
+      });
     </script>
   </body>
 </html>
