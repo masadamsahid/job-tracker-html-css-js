@@ -26,6 +26,12 @@ body {
   p {
     color: var(--text-color-gray);
   }
+
+  span {
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+  }
 }
 
 .container {
