@@ -116,15 +116,25 @@
   background-color: transparent;
   border: none;
   margin: 0;
-  padding: 2px;
+  padding: 8px 12px;
   display: flex;
+  gap: 8px;
   align-items: center;
-  font-size: 8px;
+  font-size: 12px;
   cursor: pointer;
 
   .icon {
     height: 14px;
     width: 14px;
+  }
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+
+  .icon {
+    stroke: #fff;
   }
 }
 

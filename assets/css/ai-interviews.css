@@ -198,7 +198,11 @@
         border-radius: 8px;
 
         width: fit-content;
-        max-width: 60%;
+        max-width: 55%;
+
+        @media (max-width: 1024px) {
+          max-width: 60%;
+        }
       }
 
       .chat-bubble-ai {
@@ -225,8 +229,22 @@
 
   .input-wrapper {
     display: flex;
-    background-color: blueviolet;
-    height: 100px;
+    flex-direction: column;
+    border-top: 1px solid var(--outline-color);
+    padding: 8px;
+    gap: 8px;
+
+    .chat-input {
+      border: 1px solid var(--outline-color);
+      border-radius: 8px;
+      padding: 8px;
+    }
+
+    .chat-input-buttons {
+      display: flex;
+      justify-content: end;
+      gap: 8px;
+    }
   }
 
 

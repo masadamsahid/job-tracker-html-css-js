@@ -29,7 +29,7 @@
         <h3>Apps</h3>
         <ul class="menu-list">
           <li>
-            <a href="#" class="menu-item menu-item-active">
+            <a href="./my-applications.html" class="menu-item menu-item-active">
               <i class="icon" data-lucide="briefcase-business"></i>
               <span>
                 My Applications
@@ -37,7 +37,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="menu-item">
+            <a href="./ai-interviews.html" class="menu-item">
               <i class="icon" data-lucide="bot-message-square"></i>
               <span>
                 AI Interviews
@@ -128,6 +128,21 @@
               <i class="icon search-icon" data-lucide="search"></i>
             </div>
             <div id="interview-list-card-list" class="interview-card-list">
+              <div id="interview-1" class="interview-card" onclick="selectInterview(2)">
+                <img src="./assets/data/img/company-logos/google_logo.jpeg" alt="company">
+                <div class="interview-info">
+                  <h3 class="interview-name">
+                    Software Engineer
+                  </h3>
+                  <p class="interview-category">
+                    at Google
+                  </p>
+                  <p class="date">
+                    5 minutes ago
+                  </p>
+                </div>
+              </div>
+
               <div id="interview-2" class="interview-card" onclick="selectInterview(2)">
                 <img src="./assets/data/img/company-logos/tiktok_logo.jpeg" alt="company">
                 <div class="interview-info">
@@ -136,6 +151,21 @@
                   </h3>
                   <p class="interview-category">
                     at TikTok
+                  </p>
+                  <p class="date">
+                    5 minutes ago
+                  </p>
+                </div>
+              </div>
+
+              <div id="interview-3" class="interview-card" onclick="selectInterview(2)">
+                <img src="./assets/data/img/company-logos/gojek_logo.jpeg" alt="company">
+                <div class="interview-info">
+                  <h3 class="interview-name">
+                    Software Engineer
+                  </h3>
+                  <p class="interview-category">
+                    at Gojek
                   </p>
                   <p class="date">
                     5 minutes ago
@@ -191,10 +221,93 @@
                 </div>
               </div>
 
-            </div>
-            <div class="input-wrapper">
+              <div class="chat-row">
+                <div class="chat-bubble chat-bubble-ai">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus ullamcorper nisl eget nulla mattis, sit amet faucibus ex ultrices.
+                    Integer in nulla at eros vulputate commodo at at magna.
+                    Suspendisse eget lectus sit amet sem malesuada blandit nec id nibh.
+                    Maecenas quis sapien in ligula tincidunt malesuada.
+                  </p>
+                </div>
+              </div>
+              <div class="chat-row">
+                <div class="chat-bubble chat-bubble-user">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus ullamcorper nisl eget nulla mattis, sit amet faucibus ex ultrices.
+                    Integer in nulla at eros vulputate commodo at at magna.
+                    Suspendisse eget lectus sit amet sem malesuada blandit nec id nibh.
+                    Maecenas quis sapien in ligula tincidunt malesuada.
+                  </p>
+                </div>
+              </div>
+
+              <div class="chat-row">
+                <div class="chat-bubble chat-bubble-ai">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus ullamcorper nisl eget nulla mattis, sit amet faucibus ex ultrices.
+                    Integer in nulla at eros vulputate commodo at at magna.
+                    Suspendisse eget lectus sit amet sem malesuada blandit nec id nibh.
+                    Maecenas quis sapien in ligula tincidunt malesuada.
+                  </p>
+                </div>
+              </div>
+              <div class="chat-row">
+                <div class="chat-bubble chat-bubble-user">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus ullamcorper nisl eget nulla mattis, sit amet faucibus ex ultrices.
+                    Integer in nulla at eros vulputate commodo at at magna.
+                    Suspendisse eget lectus sit amet sem malesuada blandit nec id nibh.
+                    Maecenas quis sapien in ligula tincidunt malesuada.
+                  </p>
+                </div>
+              </div>
+
+              <div class="chat-row">
+                <div class="chat-bubble chat-bubble-ai">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus ullamcorper nisl eget nulla mattis, sit amet faucibus ex ultrices.
+                    Integer in nulla at eros vulputate commodo at at magna.
+                    Suspendisse eget lectus sit amet sem malesuada blandit nec id nibh.
+                    Maecenas quis sapien in ligula tincidunt malesuada.
+                  </p>
+                </div>
+              </div>
+              <div class="chat-row">
+                <div class="chat-bubble chat-bubble-user">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus ullamcorper nisl eget nulla mattis, sit amet faucibus ex ultrices.
+                    Integer in nulla at eros vulputate commodo at at magna.
+                    Suspendisse eget lectus sit amet sem malesuada blandit nec id nibh.
+                    Maecenas quis sapien in ligula tincidunt malesuada.
+                  </p>
+                </div>
+              </div>
 
             </div>
+            <form class="input-wrapper">
+              <textarea
+                name="name"
+                class="chat-input"
+                placeholder="Reply with text..."
+                rows="3"
+              ></textarea>
+
+              <div class="chat-input-buttons">
+                <button class="btn">
+                  <i class="icon" data-lucide="mic"></i>
+                </button>
+                <button class="btn btn-primary">
+                  Reply <i class="icon" data-lucide="send"></i>
+                </button>
+              </div>
+            </form>
 
           </div>
         </div>
