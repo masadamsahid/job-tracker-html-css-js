@@ -149,12 +149,118 @@
   }
   .content-panel{
     display: grid;
-    padding: 20px;
-    grid-template-areas: "addJob-illustration addJob-form";
-    grid-template-columns: 100% 100%;
+    grid-template-rows: "addJob-illustration addJob-form";
+    padding: 30px;
     max-height: 100vh;
 
   }
+  .addJob-illustration{
+    display: grid;
+    grid-template-areas: "illustration illustration-text";
+    grid-template-columns: "50% 50%";
+  }
+  .addJob-form {
+    display:grid;
+    grid-template-areas: 
+    "form-grid"
+    "form-grid-2";
+    grid-template-rows: 50% 50%;
+    gap:20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding:20px;
+    width: 100%; /* Mengatur lebar menjadi 100% */
+    max-width: 100%; 
+    margin: auto ;
+     /* Menggunakan grid */
+/* Menambahkan area untuk tombol aksi */
+}
+.form-grid{
+  display:grid;
+  grid-template-areas: 
+        "job-title company-name"
+        "current-status job-vacancy-link";
+  grid-template-columns: 1fr 1fr; /* Membagi menjadi 2 kolom */
+  gap: 20px;
+  
+}
+
+.job-title {
+    grid-area: job-title;
+}
+
+.company-name {
+    grid-area: company-name;
+}
+
+.current-status {
+    grid-area: current-status;
+}
+
+.job-vacancy-link {
+    grid-area: job-vacancy-link;
+}
+
+.resume {
+    grid-area: resume;
+    grid-column: span 2; /* Mengatur resume untuk mengambil 2 kolom */
+}
+
+.job-description {
+    grid-area: job-description;
+    grid-column: span 2; /* Mengatur deskripsi pekerjaan untuk mengambil 2 kolom */
+}
+
+.form-actions {
+    grid-area: actions; /* Mengatur tombol aksi */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+.cancel-btn,
+.proceed-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #f44336; /* Merah */
+    color: white;
+}
+
+.proceed-btn {
+    background-color: #4CAF50; /* Hijau */
+    color: white;
+}
   
   
   #sidebar-trigger {

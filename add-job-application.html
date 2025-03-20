@@ -124,11 +124,56 @@
           </div>
           <div class="content-panel">
             <div class="addJob-illustration">
-              <img src="./assets/img/addJob-illustration.png" alt="">
-              <p>Let's <span>track</span> it!</p>
+              <img src="./assets/img/addJob-illustration.png" alt="" class="illustration">
+              <h1 class="illustration-text">Let's <span style="color: 16A249">track</span> it!</h1>
             </div>
 
-            <div class="addJob-form"></div>
+
+            <div class="addJob-form">
+                <form id="job-application-form">
+                  <div class="form-grid">
+                    <div class="form-group job-title">
+                      <label for="job-title">Job Title *</label>
+                      <input type="text" id="job-title" placeholder="Job Title" required>
+                    </div>
+                    <div class="form-group company-name">
+                        <label for="company-name">Company *</label>
+                        <input type="text" id="company-name" placeholder="Company Name" required>
+                    </div>
+                    <div class="form-group current-status">
+                        <label for="current-status">Current Status</label>
+                        <select id="current-status">
+                            <option value="select">Select</option>
+                            <option value="applied">Applied</option>
+                            <option value="interview">Interview</option>
+                            <option value="accepted">Accepted</option>
+                            <option value="rejected">Rejected</option>
+                        </select>
+                    </div>
+                    <div class="form-group job-vacancy-link">
+                        <label for="job-vacancy-link">Job Vacancy Link</label>
+                        <input type="url" id="job-vacancy-link" placeholder="https://www.job-example.com/">
+                    </div>
+                  </div>
+                  <div class="form-grid-2">
+                    <div class="form-group resume">
+                        <label for="resume">Resume (pdf.)</label>
+                        <input type="file" id="resume" accept=".pdf">
+                    </div>
+                    <div class="form-group job-description">
+                        <label for="job-description">Job Description</label>
+                        <textarea id="job-description" placeholder="Please include all information relevant to job description."></textarea>
+                    </div>
+                  </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn">Cancel</button>
+                        <button type="submit" class="proceed-btn">Proceed Tracking</button>
+                    </div>
+                </form>
+            </div>
+
+            
 
           </div>
 
