@@ -117,11 +117,14 @@
   border: none;
   margin: 0;
   padding: 8px 12px;
-  display: flex;
+  /* display: flex; */
   gap: 8px;
+  /* justify-content: center; */
   align-items: center;
   font-size: 12px;
   cursor: pointer;
+  width: fit-content;
+  /* text-align: center; */
 
   .icon {
     height: 14px;

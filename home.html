@@ -4,51 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="assets/css/home-new.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     </style>
   </head>
   <body>
-    <header>
+    <header class=".header" style="margin-bottom: 0;">
       <!-- Navbar -->
-      <section>
+      <div class="landing-page-container">
         <nav class="navbar">
-          <div class="navbar-container">
-            <div class="hamburger-menu">&#9776;</div>
-                <a href="" class="logo"><h1>LOGO</h1></a>
-                <ul class="nav-list">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Pricing</a></li>
-                </ul>
-                <div class="navbar-button">
-                  <button class="sign-up"><a>Sign Up</a></button>
-                </div>
-            </div>
+          <div class="hamburger-menu">&#9776;</div>
+          <a href="#" class="logo">
+            LOGO
+          </a>
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+          <div class="auth-buttons-wrapper">
+            <a href="./register.html" class="btn btn-primary">
+              Register
+            </a>
+            <a href="./login.html" class="btn btn-secondary">
+              Login
+            </a>
+          </div>
         </nav>
-        <hr>
-      </section>
+      </div>
     </header>
 
-    <main>  
+    <main class="landing-page-container">
       <!-- Hero -->
       <section>
         <div class="hero">
-          <div class="hero-image">
-            <img class="image" src="assets/images/4 to 5 people sucessfully get their jobs in an office with green accent color without any text_ 1.png" alt="Hero Image">
-          </div>
+          <img class="hero-image" src="assets/images/4 to 5 people sucessfully get their jobs in an office with green accent color without any text_ 1.png" alt="Hero Image">
           <div class="hero-desc">
-            <div class="hero-title">
-              <span>Jotrack</span>
-            </div>
-            <div class="hero-subtitle">
-              <p>Simplify Your Job Search: AI Interviews & Effortless Application</p>
-            </div>
-            <div class="hero-button">
-              <button>Get Started</button>
-            </div>
+            <h1 class="hero-title">Jotrack</h1>
+            <h2 class="hero-subtitle">
+              Simplify Your Job Search: AI Interviews & Effortless Application
+            </h2>
+            <button class="btn btn-primary cta-button" type="button">
+              Get Started
+            </button>
           </div>
         </div>
       </section>
@@ -56,116 +56,86 @@
       <!-- Achievments Card -->
       <section>
         <div class="achievements">
-          <div class="achievements-container">
-            <div class="achievements-card">
-              <div class="achievements-title">
-                <span class="title">Jobs</span>
-                <span id="icon-jobs">Icon</span>
+          <div class="achievements-wrapper">
+            <div class="achievement-card">
+              <div class="achievement-header">
+                <p class="title">Jobs</p>
+                <i class="icon" data-lucide="briefcase-business"></i>
               </div>
-              <div class="achievements-description">
-                <span>10.7K+</span>
-                <p>have been tracked</p>
-              </div>
+              <p class="metric">10.7K+</p>
+              <p class="desc">have been tracked</p>
             </div>
-
-            <div class="achievements-card">
-              <div class="achievements-title">
-                <span class="title">AI-Interviews</span>
-                <span id="icon-ai">Icon</span>
+      
+            <div class="achievement-card">
+              <div class="achievement-header">
+                <p class="title">AI-Interviews</p>
+                <i class="icon" data-lucide="mic"></i>
               </div>
-              <div class="achievements-description">
-                <span>500+</span>
-                <p>have been done</p>
-              </div>
+              <p class="metric">500+</p>
+              <p class="desc">have been done</p>
             </div>
-
-            <div class="achievements-card">
-              <div class="achievements-title">
-                <span class="title">People</span>
-                <span id="icon-people">Icon</span>
+      
+            <div class="achievement-card">
+              <div class="achievement-header">
+                <p class="title">People</p>
+                <i class="icon" data-lucide="users"></i>
               </div>
-              <div class="achievements-description">
-                <span>500+</span>
-                <p>land their dream jobs</p>
-              </div>
+              <p class="metric">500+</p>
+              <p class="desc">land their dream jobs</p>
             </div>
           </div>
-          <br>
-          <br>
-          <!-- <hr class="achievements-break"> -->
         </div>
       </section>
 
       <!-- Review -->
       <section>
         <div class="reviews">
-          <div class="review-main-title">
-            <h1 class="review-title">What they say <span>about us?</span></h1>
-          </div>
-          <div class="reviews-container">
-            <div class="review-card">
-              <div class="review-profile">
-                <img src="assets/images/Avatar.png" alt="Avatar Picture">
-                <div class="review-detail">
-                  <p class="name">Sofia Davis</p>
-                  <p class="time">2 months ago</p>
-                </div>
-                <div class="review-rating">
+          <h1 class="section-title">What they say <span class="text-primary">about us?</span></h1>
+          <div class="reviews-container scrollbar-hidden">
+            <div class="reviews-wrapper">
+              <div class="review-card">
+                <div class="review-profile">
+                  <img class="reviewer-img" src="assets/images/Avatar.png" alt="Avatar Picture">
+                  <div class="reviewer-detail">
+                    <p class="name">Sofia Davis</p>
+                    <p class="time">2 months ago</p>
+                  </div>
                   <p class="rating">5.0 ⭐</p>
                 </div>
+                <p class="reviewer-title">Software Engineer at ABC Company</p>
+                <p class="review-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus cursus convallis. Proin eget nisl metus. Vivamus ac pharetra nibh, sed feugiat neque. Vivamus arcu dolor, ultrices commodo placerat at, vehicula eget ex. Ut et mollis urna. Aliquam vitae mattis purus, quis consectetur metus. Vivamus sed elit diam. Ut iaculis ex non odio ullamcorper, eu scelerisque sem tempus. Cras fermentum neque a mauris tempus elementum.
+                </p>
               </div>
-              <div class="review-description">
-                <div class="review-title">
-                  <p>Software Engineer at ABC Company</p>
-                </div>
-                <div class="review-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus cursus convallis. Proin eget nisl metus. Vivamus ac pharetra nibh, sed feugiat neque. Vivamus arcu dolor, ultrices commodo placerat at, vehicula eget ex. Ut et mollis urna. Aliquam vitae mattis purus, quis consectetur metus. Vivamus sed elit diam. Ut iaculis ex non odio ullamcorper, eu scelerisque sem tempus. Cras fermentum neque a mauris tempus elementum.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="review-card">
-              <div class="review-profile">
-                <img src="assets/images/Avatar.png" alt="Avatar Picture">
-                <div class="review-detail">
-                  <p class="name">Budi Berbudi</p>
-                  <p class="time">2 months ago</p>
-                </div>
-                <div class="review-rating">
+            
+              <div class="review-card">
+                <div class="review-profile">
+                  <img class="reviewer-img" src="assets/images/Avatar.png" alt="Avatar Picture">
+                  <div class="reviewer-detail">
+                    <p class="name">Budi Berbudi</p>
+                    <p class="time">2 months ago</p>
+                  </div>
                   <p class="rating">5.0 ⭐</p>
                 </div>
+                <p class="reviewer-title">UI Designer at XYZ Inc.</p>
+                <p class="review-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus cursus convallis. Proin eget nisl metus. Vivamus ac pharetra nibh, sed feugiat neque. Vivamus arcu dolor, ultrices commodo placerat at, vehicula eget ex. Ut et mollis urna. Aliquam vitae mattis purus, quis consectetur metus. Vivamus sed elit diam. Ut iaculis ex non odio ullamcorper, eu scelerisque sem tempus. Cras fermentum neque a mauris tempus elementum.
+                </p>
               </div>
-              <div class="review-description">
-                <div class="review-title">
-                  <p>UI Designer at XYZ Inc.</p>
-                </div>
-                <div class="review-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus cursus convallis. Proin eget nisl metus. Vivamus ac pharetra nibh, sed feugiat neque. Vivamus arcu dolor, ultrices commodo placerat at, vehicula eget ex. Ut et mollis urna. Aliquam vitae mattis purus, quis consectetur metus. Vivamus sed elit diam. Ut iaculis ex non odio ullamcorper, eu scelerisque sem tempus. Cras fermentum neque a mauris tempus elementum.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="review-card">
-              <div class="review-profile">
-                <img src="assets/images/Avatar.png" alt="Avatar Picture">
-                <div class="review-detail">
-                  <p class="name">Sovia Davis</p>
-                  <p class="time">2 months ago</p>
-                </div>
-                <div class="review-rating">
+            
+              <div class="review-card">
+                <div class="review-profile">
+                  <img class="reviewer-img" src="assets/images/Avatar.png" alt="Avatar Picture">
+                  <div class="reviewer-detail">
+                    <p class="name">Sovia Davis</p>
+                    <p class="time">2 months ago</p>
+                  </div>
                   <p class="rating">5.0 ⭐</p>
                 </div>
-              </div>
-              <div class="review-description">
-                <div class="review-title">
-                  <p>Software Engineer at ABC Company</p>
-                </div>
-                <div class="review-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus cursus convallis. Proin eget nisl metus. Vivamus ac pharetra nibh, sed feugiat neque. Vivamus arcu dolor, ultrices commodo placerat at, vehicula eget ex. Ut et mollis urna. Aliquam vitae mattis purus, quis consectetur metus. Vivamus sed elit diam. Ut iaculis ex non odio ullamcorper, eu scelerisque sem tempus. Cras fermentum neque a mauris tempus elementum.
-                  </p>
-                </div>
+                <p class="reviewer-title">Software Engineer at ABC Company</p>
+                <p class="review-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus cursus convallis. Proin eget nisl metus. Vivamus ac pharetra nibh, sed feugiat neque. Vivamus arcu dolor, ultrices commodo placerat at, vehicula eget ex. Ut et mollis urna. Aliquam vitae mattis purus, quis consectetur metus. Vivamus sed elit diam. Ut iaculis ex non odio ullamcorper, eu scelerisque sem tempus. Cras fermentum neque a mauris tempus elementum.
+                </p>
               </div>
             </div>
           </div>
@@ -175,74 +145,90 @@
       <!-- Pricing -->
       <section>
         <div class="pricing">
-          <div class="pricing-main-title">
-            <h1>Find the right plan to <span>enhance</span> your journey. </h1>
-          </div>
+          <h1 class="section-title">
+            Find the right plan to <span class="text-primary">enhance</span> your journey. 
+          </h1>
           <div class="pricing-container">
             <div class="pricing-card">
               <div class="pricing-header">
-                <span>Free</span>
-                <p>Starter Plan</p>
+                <p class="pricing-price">Free</p>
+                <h1 class="pricing-title">Starter Plan</h1>
                 <p class="pricing-subtitle">Begin your journey and manage you applications for free</p>
               </div>
-              <div class="pricing-description">
-                <div class="pricing-pros">
-                  <img src="assets/images/badge-check.png" alt="Pros">
-                  <p>Track job applications up to 50 active applications</p>
-                </div>
-                <div class="pricing-pros">
-                  <img src="assets/images/badge-check.png" alt="Pros">
-                  <p>Archive any tracked applications anytime</p>
-                </div>
-                <div class="pricing-cons">
-                  <img src="assets/images/badge-x.png" alt="Cons">
-                  <p>Access to AI-Powered Interview Simulator</p>
-                </div>
-                <div class="pricing-cons">
-                  <img src="assets/images/badge-x.png" alt="Cons">
-                  <p>Personalized suggestions</p>
-                </div>
-                <div class="pricing-cons">
-                  <img src="assets/images/badge-x.png" alt="Cons">
-                  <p>CV/Resume reviews & examinations</p>
-                </div>
-                <div class="pricing-button">
-                  <button>Get Started</button>
-                </div>
-              </div>
+              <ul class="pricing-description">
+                <li class="pricing-pros">
+                  <div>
+                    <i class="icon" data-lucide="badge-check"></i>
+                  </div>
+                  <p class="feature">Track job applications up to 50 active applications</p>
+                </li>
+                <li class="pricing-pros">
+                  <div>
+                    <i class="icon" data-lucide="badge-check"></i>
+                  </div>
+                  <p class="feature">Archive any tracked applications anytime</p>
+                </li>
+                <li class="pricing-cons">
+                  <div>
+                    <i class="icon" data-lucide="badge-x"></i>
+                  </div>
+                  <p class="feature">Access to AI-Powered Interview Simulator</p>
+                </li>
+                <li class="pricing-cons">
+                  <div>
+                    <i class="icon" data-lucide="badge-x"></i>
+                  </div>
+                  <p class="feature">Personalized suggestions</p>
+                </li>
+                <li class="pricing-cons">
+                  <div>
+                    <i class="icon" data-lucide="badge-x"></i>
+                  </div>
+                  <p class="feature">CV/Resume reviews & examinations</p>
+                </li>
+              </ul>
+              <button class="btn btn-primary" style="width: 100%;">Get Started</button>
             </div>
 
             <div class="pricing-card">
               <div class="pricing-header">
-                <span>IDR 50K/mo</span>
-                <p>Premium Plan</p>
+                <p class="pricing-price">IDR 50K/mo</p>
+                <h1 class="pricing-title">Premium Plan</h1>
                 <p class="pricing-subtitle">Boost your journey with our premium features and land your dream job</p>
               </div>
-              <div class="pricing-description">
-                <div class="pricing-pros">
-                  <img src="assets/images/badge-check.png" alt="Pros">
-                  <p>Track job applications up to 50 active applications</p>
-                </div>
-                <div class="pricing-pros">
-                  <img src="assets/images/badge-check.png" alt="Pros">
-                  <p>Archive any tracked applications anytime</p>
-                </div>
-                <div class="pricing-pros" id="ai">
-                  <img src="assets/images/badge-check.png" alt="Pros">
-                  <p>Access to AI-Powered Interview Simulator</p>
-                </div>
-                <div class="pricing-pros" id="suggestions">
-                  <img src="assets/images/badge-check.png" alt="Pros">
-                  <p>Personalized suggestions</p>
-                </div>
-                <div class="pricing-pros" id="cv">
-                  <img src="assets/images/badge-check.png" alt="Pros">
-                  <p>CV/Resume reviews & examinations</p>
-                </div>
-                <div class="pricing-button" id="premium-button">
-                  <button>Get Started</button>
-                </div>
-              </div>
+              <ul class="pricing-description">
+                <li class="pricing-pros">
+                  <div>
+                    <i class="icon" data-lucide="badge-check"></i>
+                  </div>
+                  <p class="feature">Track job applications up to 50 active applications</p>
+                </li>
+                <li class="pricing-pros">
+                  <div>
+                    <i class="icon" data-lucide="badge-check"></i>
+                  </div>
+                  <p class="feature">Archive any tracked applications anytime</p>
+                </li>
+                <li class="pricing-pros">
+                  <div>
+                    <i class="icon" data-lucide="badge-check"></i>
+                  </div>
+                  <p class="feature">Access to AI-Powered Interview Simulator</p>
+                </li>
+                <li class="pricing-pros">
+                  <div>
+                    <i class="icon" data-lucide="badge-check"></i>
+                  </div>
+                  <p class="feature">Personalized suggestions</p>
+                </li>
+                <li class="pricing-pros">
+                  <div>
+                    <i class="icon" data-lucide="badge-check"></i>
+                  </div>
+                  <p class="feature">CV/Resume reviews & examinations</p>
+                </li>
+              </ul>
+              <button class="btn btn-primary" style="width: 100%;">Get Started</button>
             </div>
           </div>
         </div>
@@ -251,9 +237,7 @@
       <!-- FAQ -->
        <section>
         <div class="faq">
-          <div class="faq-main-title">
-            <h1>Frequently Asked Questions</h1>
-          </div>
+          <h1 class="section-title">Frequently Asked Questions</h1>
           <div class="faq-container">
             <div class="faq-accordion">
               <div class="accordion-label">
@@ -264,29 +248,60 @@
               </div>
               <!-- <hr> -->
             </div>
+
+            <div class="faq-accordion">
+              <div class="accordion-label">
+                Lorem ipsum dolor sit amet consectetur adipisicing?
+              </div>
+              <div class="accordion-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate sunt natus quos dignissimos, laboriosam tenetur laborum quasi repudiandae nam officiis, a sed earum fuga.
+              </div>
+              <!-- <hr> -->
+            </div>
+
+            <div class="faq-accordion">
+              <div class="accordion-label">
+                Lorem, ipsum dolor?
+              </div>
+              <div class="accordion-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quae! Eveniet ullam commodi doloribus mollitia.
+              </div>
+              <!-- <hr> -->
+            </div>
           </div>
         </div>
        </section>
     </main>
+
     <footer>
       <div class="footer-container">
-        <div class="footer-logo">
-          <a href="#">
-            <h1>LOGO</h1>
-          </a>
-        </div>
+        <a class="footer-logo" href="#">
+          LOGO
+        </a>
         <div class="footer-description">
           <p>Donec varius odio elit, nec egestas arcu volutpat id. Aenean aliquet tempor arcu, eu rhoncus nisl elementum et. Donec iaculis bibendum ultrices. Fusce aliquam ornare neque, quis tincidunt sapien.</p>
           <p>Aenean vehicula lectus sapien, vel aliquet lectus aliquet eget. Suspendisse sit amet massa at mauris commodo vestibulum. Fusce viverra pharetra urna eget sagittis.</p>
           <p>Cras imperdiet non felis in posuere.</p>
         </div>
-        <div class="social-media">
-          <img src="assets/images/instagram.png" alt="Instagram">
-          <img src="assets/images/twitter.png" alt="Twitter">
-          <img src="assets/images/linkedin.png" alt="LinkedIn">
+        <div class="social-media-wrapper">
+          <a href="http://instagram.com" class="social-media">
+            <i class="icon" data-lucide="instagram"></i>
+          </a>
+          <a href="http://twitter.com" class="social-media">
+            <i class="icon" data-lucide="twitter"></i>
+          </a>
+          <a href="http://linkedin.com" class="social-media">
+            <i class="icon" data-lucide="linkedin"></i>
+          </a>
         </div>
       </div>
     </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
 
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', () => {

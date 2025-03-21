@@ -1,734 +1,522 @@
-body{
-    font-family: 'Inter', serif;
+@import url('components.css');
+
+body {
+  font-family: 'Inter', serif;
+  padding: 0;
+  margin: 0;
+
+  * {
     padding: 0;
     margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    /* color: black; */
+  }
+}
 
-    * {
-        padding: 0;
-        margin: 0;
+.landing-page-container {
+  /* display: flex; */
+
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  section {
+    padding: 40px 20px;
+
+    .section-title {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: fit-content;
+      font-size: 48px;
+      font-weight: 700;
     }
+
+    @media (max-width: 1024px) {
+      padding: 20px 10px;
+
+      .section-title {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      font-size: 24px;
+    }
+    
+  }
 }
 
 .navbar {
-    margin: 0 20px;
-    padding: 13px 30px;
-}
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 55px;
+
+  @media (max-width: 1024px) {
+    padding: 13px 20px;
+  }
 }
 
-.hamburger-menu{
-    cursor: pointer;
+.hamburger-menu {
+  cursor: pointer;
 
-    @media (min-width: 480px) {
-        display: none;
-    }
+  @media (min-width: 480px) {
+    display: none;
+  }
 }
 
 .logo {
-    font-size: 48px;
-    font-weight: bold;
-    text-decoration: none;
-    /* padding-top: 12px; */
-    /* margin-left: 20px; */
-    font-weight: bold;
-    color: green;
+  font-size: 48px;
+  font-weight: bold;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 .nav-list {
-    margin: 0;
-    display: flex;
-    gap: 24px;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  color: black;
+
+  @media (max-width: 1024px) {
+    /* gap: 16px; */
+  }
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.auth-buttons-wrapper {
+  display: flex;
+  gap: 8px;
+
+  .btn {
     font-size: 14px;
-    color: black;
+  }
 }
 
-/* .nav-list li{
-    padding-left: 0;
-    margin-right: 10px;
-    gap: 20px;
-} */
+.hero {
+  display: flex;
 
-.nav-list li a {
-    /* padding: 10px 115px; */
-    text-decoration: none;
-    display: inline-block;
-    color: black;
-}
+  gap: 72px;
+  justify-content: center;
+  align-items: center;
 
-.sign-up{
-    height: 40px;
-    width: 85px;
-    font-size: 14px;
-    border-radius: 6px;
-    border-style: none;
-    background-color: green;
-    color: white;
-    /* padding: 40px 85px; */
-}
+  .hero-image {
+    flex: 1;
+    max-width: 50%;
+  }
 
-section .hero{
-    width: 100%;
+  .hero-desc {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 83px;
-}
-
-.hero .hero-image img{
-    width: 619.64px;
-    height: 426px;
-}
-
-.hero-desc{
-    margin-left: 50px;
-    display: flex;
-    align-items: center;
+    width: 400px;
+    width: fit-content;
     flex-direction: column;
     justify-content: center;
-}
+    gap: 16px;
+  }
 
-.hero-title{
+  .hero-title {
     font-size: 96px;
-    color: green;
-}
+    color: var(--primary-color);
+    font-weight: 700;
+  }
 
-.hero-title span{
-    font-family: 'Outfit', sans-serif !important;
-    font-weight: bold;
-}
-
-.hero-subtitle p{
+  .hero-subtitle {
+    width: 100%;
     font-size: 24px;
-}
+  }
 
-.hero-button{
-    align-self: flex-start;
-}
+  @media (max-width: 1024px) {
+    gap: 36px;
 
-.hero-button button{
-    height: 40px;
-    width: 110px;
-    font-size: 14px;
-    border-radius: 6px;
-    border-style: none;
-    background-color: green;
-    color: white;
-}
+    .hero-title {
+      font-size: 64px;
+    }
 
-.achievements .achievements-container{
-    display: flex;
+    .hero-subtitle {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    gap: 24px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    text-align: center;
+
+    .hero-image {
+      width: 400px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .hero-title {
+      font-size: 48px;
+    }
+
+    .hero-desc {
+      align-items: center;
+    }
+
+    .cta-button {
+      width: 100%;
+    }
+  }
 }
 
-.achievements .achievements-container .achievements-card{
-    width: 305.5px;
-    height: 130px;
-    border-radius: 12px;
-    border: 2px solid #E4E4E7;
-    box-shadow: 0px 1px #E4E4E7;
-    margin-top: 74px;
+.achievements-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
 }
 
-.achievements-container .achievements-card .achievements-title{
-    margin-top: 24px;
-    margin-left: 24px;
-    margin-bottom: 8px;
-    margin-right: 26px;
-    color: green;
-}
+.achievement-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  width: 305.5px;
+  /* min-height: 117px; */
+  border-radius: 12px;
+  border: 2px solid var(--outline-color);
+  box-shadow: 0px 1px var(--outline-color);
 
-.achievements-card .achievements-title span{
-    display: inline;
-    font-size: 24px;
-    font-weight: bold;
-}
+  .icon {
+    width: 16px;
+    height: 16px;
+    stroke-width: 1px;
+  }
 
-/* .achievements-card .achievements-title .icon{
-    font-size: 24px;
-    font-weight: bold;
-} */
-
-#icon-jobs{
-    padding-left: 140px;
-    visibility: hidden;
-}
-
-#icon-ai{
-    padding-left: 47px;
-    visibility: hidden;
-}
-
-#icon-people{
-    padding-left: 124px;
-    visibility: hidden;
-}
-
-.achievements-container .achievements-card .achievements-description{
-    margin: 0 24px;
-}
-
-.achievements-card .achievements-description span{
-    font-size: 24px;
-    font-weight: bolder;
-}
-
-.achievements-card .achievements-description p{
-    font-size: 12px;
-    margin-top: 0px;
-}
-
-section .achievements-break{
+  .achievement-header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1028px;
-}
-
-section .reviews .review-main-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-family: 'Outfit', sans-serif !important;
-    margin-top: 50px;
-}
-
-.reviews .review-main-title span{
-    color: green;
-}
-
-.reviews .reviews-container{
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 38px;
-    /* overflow: scroll; */
-}
-
-.reviews .reviews-container .review-card{
-    width: 360px;
-    height: auto;
-    border-radius: 12px;
-    border: 2px solid #E4E4E7;
-    box-shadow: 0px 1px #E4E4E7;
-    margin-top: 53px;
-    /* overflow: scroll; */
-}
-
-.reviews-container .review-card .review-profile{
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 12px;
-    margin: 24px;
-}
-
-.review-card .review-profile img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.review-card .review-profile .review-detail{
-    display: flex;
-    flex-direction: column;
-}
-
-.review-profile .review-detail .name{
-    font-size: 14px;
-    font-weight: 700;
-    margin: 0;
-    color: #09090B;
-}
-
-.review-profile .review-detail .time{
-    font-size: 14px;
-    margin: 0;
-    color: #71717A;
-}
-
-.review-card .review-profile .review-rating{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0px;
-    margin-left: auto;
-}
-
-.review-profile .review-rating p{
-    font-size: 20px;
-    /* margin-left: 90px; */
-    display: flex;
     align-items: center;
-    justify-content: center;
-}
+    gap: 16px;
 
-.review-profile .review-rating .rating{
-    font-size: 20px;
-}
+    .title {
+      font-size: 14px;
+      color: var(--primary-color);
+    }
+  }
 
-.review-profile .review-rating .star{
-    font-size: 20px;
-    margin-top: 0;
-}
-
-.review-card .review-description .review-title{
-    font-size: 16px;
-    font-weight: 700;
-    color: green;
-    margin: 24px;
-}
-
-.review-card .review-description .review-text{
-    font-size: 14px;
-    /* font-weight: 700; */
-    color: #71717A;
-    margin: 24px;
-}
-
-section .pricing .pricing-main-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Outfit', sans-serif !important;
+  .metric {
+    color: black;
     font-size: 24px;
-    margin-top: 116px;
+    font-weight: 700;
+  }
+
+  .desc {
+    font-size: 12px;
+    color: gray;
+  }
 }
 
-.pricing .pricing-main-title span{
-    color: green;
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+
+  .reviews-container {
+    width: 100%;
+    ;
+    overflow-x: auto;
+
+    .reviews-wrapper {
+      display: flex;
+      gap: 24px;
+      width: 1128px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .review-card {
+        padding: 24px;
+        width: 360px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        border: 1px solid var(--outline-color);
+        border-radius: 12px;
+
+        .review-profile {
+          display: flex;
+          gap: 16px;
+
+          .reviewer-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+
+          .reviewer-detail {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            .name {
+              color: black;
+            }
+
+            .time {
+              color: gray;
+            }
+          }
+
+          .rating {
+            font-size: 20px;
+            color: black;
+          }
+        }
+
+        .reviewer-title {
+          color: var(--primary-color);
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .review-body {}
+      }
+    }
+  }
+
 }
 
-.pricing .pricing-container{
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+
+  .pricing-container {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 38px;
-    /* overflow: scroll; */
+    gap: 24px;
+
+    .pricing-card {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 407.33px;
+      height: auto;
+      border-radius: 12px;
+      border: 2px solid #E4E4E7;
+      box-shadow: 0px 1px #E4E4E7;
+
+      .pricing-header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .pricing-price {
+          font-size: 60px;
+          color: black;
+        }
+
+        .pricing-title {
+          font-size: 30px;
+          font-weight: 600;
+        }
+
+        .pricing-subtitle {
+          font-size: 14px;
+          color: gray;
+          min-height: 2lh;
+        }
+      }
+
+      .pricing-description {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        list-style-type: none;
+
+        .pricing-pros,
+        .pricing-cons {
+          display: flex;
+          gap: 16px;
+
+          p {
+            font-size: 20px;
+            font-weight: 400;
+          }
+
+          .icon {
+            width: 24px !important;
+            height: 24px !important;
+          }
+        }
+
+        .pricing-pros {
+          p {
+            color: black;
+          }
+
+          & .icon {
+            stroke: black;
+          }
+        }
+
+        .pricing-cons {
+          p {
+            color: gray;
+          }
+
+          & .icon {
+            stroke: gray;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
 }
 
-.pricing .pricing-container .pricing-card{
-    width: 407.33px;
-    height: auto;
-    border-radius: 12px;
-    border: 2px solid #E4E4E7;
-    box-shadow: 0px 1px #E4E4E7;
-    margin-top: 53px;
-    /* overflow: scroll; */
-}
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 
-.pricing-container .pricing-card .pricing-header{
-    margin: 24px 0 40px 24px;
-}
+  .faq-accordion {
+    width: 100%;
+  }
 
-.pricing-card .pricing-header span{
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-
-.pricing-card .pricing-header p{
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-.pricing-card .pricing-header .pricing-subtitle{
-    font-size: 14px;
-    margin-top: 0;
-    margin-right: 24px;
-    color: #71717A;
-}
-
-.pricing-container .pricing-card .pricing-description{
-    margin: 24px 24px 30px 24px;
-}
-
-.pricing-card .pricing-description .pricing-pros{
-    display: flex;
-    flex-direction: row;
-    /* margin: 24px 0 62px 24px; */
-}
-
-.pricing-description .pricing-pros img{
-    width: 24px;
-    height: 24px;
-}
-
-.pricing-description .pricing-pros p{
-    margin-top: 0;
-    margin-left: 15px;
-    font-size: 20px;
-}
-
-.pricing-card .pricing-description .pricing-cons{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-    /* margin: 24px 0 62px 24px; */
-}
-
-.pricing-description .pricing-cons img{
-    width: 24px;
-    height: 24px;
-    color: #6b7280;
-}
-
-.pricing-description .pricing-cons p{
-    margin-top: 0;
-    margin-left: 15px;
-    font-size: 20px;
-    color: #6b7280;
-}
-
-.pricing-card .pricing-description .pricing-button{
-    align-self: flex-start;
-}
-
-.pricing-description .pricing-button button{
-    height: 40px;
-    width: 359px;
-    font-size: 14px;
-    border-radius: 6px;
-    border-style: none;
-    background-color: green;
-    color: white;
-}
-
-.pricing-card .pricing-description #premium-button{
-    margin-top: 10px;
-}
-
-#ai, #suggestions, #cv{
-    margin-bottom: 10px;
-}
-
-section .faq .faq-main-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Outfit', sans-serif !important;
-    font-size: 24px;
-    margin-top: 116px;
-}
-
-section .faq .faq-container{
+  .faq-container{
     /* display: flex;
     justify-content: center;
     align-items: center; */
     margin-bottom: 153px;
     margin-right: 200px;
     margin-left: 200px;
+    min-width: 480px;
+    width: 600px;
+
+    @media (max-width: 640px) {
+      width: 300px;
+      min-width: 200px;
+    }
 }
 
-.faq-accordion{
-    width: 100%;
-}
-
-.accordion-label{
+  .accordion-label {
     padding: 10px;
     border-bottom: 1px solid black;
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
-    align-items: center; */
-    display: block;
+    align-items: center;
+    /* display: block; */
     /* margin-left: auto; */
     cursor: pointer;
     transition: all 0.3 ease;
-}
 
-.accordion-label.active{
-    padding: 10px;
-    border-bottom: 1px solid black;
-    display: block;
-    /* margin-left: auto; */
-    cursor: pointer;
-}
+    &.active {
+      padding: 10px;
+      border-bottom: 1px solid black;
+      /* display: block; */
+      /* margin-left: auto; */
+      cursor: pointer;
 
-.accordion-label::after {
-    content: "+";
-    font-size: 18px;
-    margin-left: auto;
-}
+      &::after {
+        content: "-";
+        font-size: 18px;
+        margin-left: auto;
+      }
+    }
 
-.accordion-content{
+    &::after {
+      content: "+";
+      font-size: 18px;
+      margin-left: auto;
+    }
+  }
+
+  .accordion-content {
     padding: 10px;
     display: none;
-}
+  }
 
-.accordion-content.show{
+  .accordion-content.show {
     display: block;
+  }
+
 }
 
-/* .faq-container .faq-accordion .accordion-label{
-    cursor: pointer;
-} */
+.footer-container {
+  padding: 32px 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 
-/* .faq-accordion .accordion-label::before{
-    content: "^";
-    position: absolute;
-    top: 80%;
-    right: -5px;
-    font-size: 30px;
-    transform: translateY(50%);
-    color: black;
-} */
+  color: white;
 
-footer{
-    background-color: green;
-}
+  background-color: var(--primary-color);
 
-footer .footer-container {
+  .footer-logo {
+    font-size: 96px;
+    font-weight: 900;
+    color: white;
+  }
+
+  .footer-description {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    /* margin-bottom: 5px; */
-}
-
-/* footer .footer-container .footer-logo{
-    justify-content: center;
+    gap: 16px;
     align-items: center;
-} */
 
-footer .footer-logo a{
-    text-decoration: none;
-}
-
-.footer-logo a h1{
-    font-family: 'Outfit', sans-serif !important;
-    font-weight: bolder;
-    font-size: 48px;
-    color: white;
-    margin-bottom: 0;
-}
-
-footer .footer-container .footer-description{
-    margin-left: 300px;
-    margin-right: 300px;
-    text-align: center;
-    color: white;
-}
-
-footer .footer-container .social-media{
-    margin-top: 16px;
-    margin-bottom: 27px;
-}
-
-.footer-container .social-media img{
-    margin: 0 5px;
-}
-
-@media(max-width: 834px){
-    .navbar-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-between;
-        align-items: center;
-    }
-
-    .nav-list{
-        font-size: 14px;
-        font-weight: bold;
-        gap: 50px;
-    }
-
-    .logo {
-        flex-basis: 100px;
-    }
-
-    /* .nav-list li{
-        padding-left: 0;
-        margin-right: 10px;
-    } */
-
-    /* .nav-list li a{
-        padding: 0 25px;
-    } */
-
-    section .hero{
-        width: 100%;
-        margin-top: 53px;
-        /* flex-direction: column; */
-    }
-
-    .hero .hero-image img{
-        width: 386px;
-        height: 265.38px;
-    }
-
-    .hero-button{
-        align-self: flex-start;
-    }
-
-    .hero-desc{
-        margin-left: 25px;
-    }
-
-    .hero-title{
-        font-size: 64px;
-    }
-
-    .hero-subtitle p{
-        font-size: 16px;
-        /* overflow: scroll; */
-    }
-
-    .achievements{
-        /* margin-top: 53px; */
-        margin-left: 55px;
-        margin-right: 55px;
+    p {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
     }
     
-    section .achievements-break{
-        width: 732px;
+    * {
+      color: white;
     }
+  }
 
-    .achievements-card .achievements-title span{
-        font-size: 14px;
-    }
+  .social-media-wrapper {
+    display: flex;
+    gap: 32px;
 
-    #icon-jobs{
-        padding-left: 97px;
-    }
-    
-    #icon-ai{
-        padding-left: 38px;
-    }
-    
-    #icon-people{
-        padding-left: 84px;
-    }
+    .social-media {
+      color: white;
 
-    .reviews .reviews-container{
-        gap: 26px;
-        margin: 0 25px
-        /* overflow: scroll; */
+      .icon {
+        width: 24px;
+        height: 24px;
+        stroke-width: 1px;
+        stroke: white;
+      }
     }
+  }
 
-    .reviews .reviews-container .review-card{
-        width: 360px;
-        height: 317px;
-        margin-top: 34px;
-        overflow: scroll;
-    }
+  @media (max-width: 1024px) {
+    padding: 54px 40px;
+  }
 
-    .reviews-container .review-card .review-profile{
-        gap: 6px;
-        margin: 12px;
-    }
-}
+  @media (max-width: 640px) {
+    padding: 32px 20px;
+  }
 
-@media(max-width: 412px) {
-    .nav-list{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 3.2em;
-        right: 0;
-        width: 100%;
-        background-color: #212121;
-        color: green;
-        text-align: center;
-        padding: 10px 0;
-        z-index: 10;
-    }
-
-    .nav-list.active{
-        display: flex;
-    }
-
-    .nav-list li{
-        margin: 10px 0;
-    }
-
-    .nav-list li a {
-        padding: 15px;
-        display: block;
-        text-decoration: none;
-        color: white;
-    }
-
-    .hamburger-menu{
-        display: block;
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    .hero .hero-image img{
-        width: 356px;
-        height: 244.75px;
-    }
-
-    .hero-subtitle p{
-        font-size: 18px;
-        /* overflow: scroll; */
-    }
-
-    section .hero{
-        width: 100%;
-        margin-left: 5px;
-        margin-right: 27px;
-        margin-top: 31px;
-        flex-direction: column;
-    }
-
-    .hero-title{
-        font-size: 48px;
-        text-align: center;
-    }
-
-    .hero-title span{
-        display: flex;
-        justify-content: center;
-    }
-
-    .hero-button{
-        align-self: center;
-        margin-bottom: 74px;
-    }
-
-    .achievements .achievements-container{
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .achievements .achievements-container .achievements-card{
-        margin-top: 25.5px;
-    }
-
-    section .reviews .review-main-title{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 24px;
-        margin-top: 50px;
-        margin-left: 29px;
-        margin-right: 27px;
-    }
-
-    .reviews .reviews-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 38px;
-        overflow: scroll;
-    }
-
-    html{
-        width: 100%;
-    }
 }
