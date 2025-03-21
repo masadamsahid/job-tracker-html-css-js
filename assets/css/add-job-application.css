@@ -208,6 +208,7 @@
 
   .job-title {
       grid-area: job-title;
+      width: 95%;
   }
 
   .company-name {
