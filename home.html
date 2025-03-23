@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="assets/css/home.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     </style>
+    <link rel="stylesheet" href="assets/css/home.css">
   </head>
   <body>
-    <header class=".header" style="margin-bottom: 0;">
+    <header class=".header" style="position: sticky; top: 0; z-index: 100;">
       <!-- Navbar -->
       <div class="landing-page-container">
         <nav class="navbar">
           <div class="hamburger-menu">&#9776;</div>
-          <a href="#" class="logo">
+          <a href="./home.html#" class="logo">
             LOGO
           </a>
           <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
           <div class="auth-buttons-wrapper">
             <a href="./register.html" class="btn btn-primary">
@@ -38,7 +40,7 @@
 
     <main class="landing-page-container">
       <!-- Hero -->
-      <section>
+      <section id="hero">
         <div class="hero">
           <img class="hero-image" src="assets/images/4 to 5 people sucessfully get their jobs in an office with green accent color without any text_ 1.png" alt="Hero Image">
           <div class="hero-desc">
@@ -54,7 +56,7 @@
       </section>
 
       <!-- Achievments Card -->
-      <section>
+      <section id="achievements">
         <div class="achievements">
           <div class="achievements-wrapper">
             <div class="achievement-card">
@@ -88,7 +90,7 @@
       </section>
 
       <!-- Review -->
-      <section>
+      <section id="reviews">
         <div class="reviews">
           <h1 class="section-title">What they say <span class="text-primary">about us?</span></h1>
           <div class="reviews-container scrollbar-hidden">
@@ -143,7 +145,7 @@
       </section>
 
       <!-- Pricing -->
-      <section>
+      <section id="pricing">
         <div class="pricing">
           <h1 class="section-title">
             Find the right plan to <span class="text-primary">enhance</span> your journey. 
@@ -235,7 +237,7 @@
       </section>
 
       <!-- FAQ -->
-       <section>
+       <section id="faq">
         <div class="faq">
           <h1 class="section-title">Frequently Asked Questions</h1>
           <div class="faq-container">
