@@ -1,0 +1,216 @@
+@import url('components.css');
+
+#company-list {
+  border-left: 1px solid var(--outline-color);
+  border-right: 1px solid var(--outline-color);
+  padding: 16px;
+
+  flex: .4;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  min-width: 270px;
+  max-width: 400px;
+
+  overflow-y: auto;
+
+  .company-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .company-card {
+      padding: 12px;
+      display: flex;
+      gap: 8px;
+
+      cursor: pointer;
+
+      border-radius: 8px;
+
+      img {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+      }
+
+      .company-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .company-name {
+          font-size: 14px;
+          font-weight: 700;
+        }
+
+        .company-category, .company-location {
+          font-size: 12px;
+          font-weight: 400;
+          color: #3F3F46;
+        }
+      }
+
+      &.active, &:hover {
+        background-color: rgba(var(--primary-color-rgb), .75);
+      }
+
+      p.date {
+        font-size: 12px;
+        font-weight: 400;
+        color: #3F3F46;
+        font-style: italic;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    min-width: fit-content;
+  }
+
+  @media (max-width: 640px) {
+    flex: auto;
+    max-width: none;
+    border: none;
+  }
+}
+
+.company-details, .company-details-drawer {
+  flex: 1;
+
+  min-width: 400px;
+
+  /* background-color: blue; */
+
+  .content-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    /* background-color: aqua; */
+
+    border-bottom: 1px solid var(--outline-color);
+    padding: 16px;
+
+    .company-logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    .company-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .company-name {
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 400;
+
+        color: #3F3F46;
+      }
+    }
+
+    .added-date {
+      color: #3F3F46;
+      font-size: 12px;
+      font-weight: 400;
+
+      text-align: right;
+    }
+
+    .actions {
+      display: flex;
+
+      & > .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 36px;
+        height: 36px;
+        padding: 10;
+
+        .icon {
+          width: 16px;
+          height: 16px;
+
+          stroke-width: 1px;
+        }
+      }
+    }
+  }
+
+  .content-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    overflow-y: auto;
+  }
+
+  @media (max-width: 1024px) {
+    min-width: 150px;
+  }
+
+  @media (max-width: 640px) {
+    &.company-details {
+      display: none;
+    }
+  }
+}
+
+.search-bar-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .search-input {
+    color: gray;
+    border-radius: 4px;
+    border: 1px solid var(--outline-color);
+    width: 100%;
+    padding: 8px;
+    padding-left: 30px;
+
+    &::placeholder {
+      position: absolute;
+      left: 30px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & .search-icon {
+    position: absolute;
+    left: 10px;
+
+    width: 16px;
+    height: 16px;
+
+    color: var(--outline-color);
+
+    stroke: var(--outline-color);
+  }
+}
+
+
+#your-applications-to-company-table-container {
+  overflow-x: auto;
+  
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

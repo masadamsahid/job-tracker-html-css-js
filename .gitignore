@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+
+# IDE specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Package lock files
+package-lock.json
+yarn.lock
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*~
+
+# Optional: If you're using a bundler like Parcel or Webpack and generating map files
+*.map
+
+# Optional: If you have a .env file containing sensitive information
+.env

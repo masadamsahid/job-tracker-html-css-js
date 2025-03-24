@@ -1,0 +1,211 @@
+@import url(base-layout.css);
+
+.content-panel {
+  display: grid;
+  grid-template-rows: "addJob-illustration addJob-form";
+  padding: 30px;
+  max-height: 100vh;
+
+}
+
+.addJob-illustration {
+  display: flex;
+  /* Menggunakan Flexbox */
+  flex-direction: row;
+  /* Mengatur elemen dalam kolom */
+  justify-content: center;
+  /* Menyelaraskan konten secara vertikal */
+  align-items: center;
+  /* Menyelaraskan konten secara horizontal */
+  text-align: center;
+  /* Menyelaraskan teks di tengah */
+  padding: 20px;
+  /* Menambahkan padding jika diperlukan */
+}
+
+.illustration-text {
+  font-size: 60px;
+}
+
+.illustration-text>span {
+  font-size: 60px;
+  color: #16A249;
+}
+
+.illustration {
+  width: 213px;
+  height: 213px;
+
+  @media (max-width: 1024px) {
+    width: 190px;
+    height: 190px;
+  }
+
+  @media (max-width: 640px) {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.addJob-form {
+  display: grid;
+  grid-template-areas:
+    "form-grid"
+    "form-grid-2";
+  grid-template-rows: auto;
+  /* Mengatur tinggi otomatis */
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  /* Mengatur lebar menjadi 100% */
+  margin: auto;
+  box-sizing: border-box;
+  /* Memastikan padding dihitung dalam lebar */
+
+}
+
+.form-grid {
+  display: grid;
+  grid-template-areas:
+    "job-title company-name"
+    "current-status job-vacancy-link";
+  grid-template-columns: 1fr 1fr;
+  /* Membagi menjadi 2 kolom */
+  gap: 10px;
+  padding-right: 20px;
+
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-areas:
+    "resume"
+    "job-description";
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding-right: 20px;
+
+}
+
+.job-title {
+  grid-area: job-title;
+  width: 95%;
+}
+
+.company-name {
+  grid-area: company-name;
+}
+
+.current-status {
+  grid-area: current-status;
+}
+
+.job-vacancy-link {
+  grid-area: job-vacancy-link;
+}
+
+.resume {
+  grid-area: resume;
+  grid-column: span 2;
+  /* Mengatur resume untuk mengambil 2 kolom */
+}
+
+.job-description {
+  grid-area: job-description;
+  grid-column: span 2;
+  /* Mengatur deskripsi pekerjaan untuk mengambil 2 kolom */
+}
+
+.form-actions {
+  grid-area: actions;
+  /* Mengatur tombol aksi */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.cancel-btn,
+.proceed-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  /* Merah */
+  color: white;
+}
+
+.proceed-btn {
+  background-color: #4CAF50;
+  /* Hijau */
+  color: white;
+}
+
+@media (max-width: 1024px) {
+
+  .addJob-illustration {
+    display: flex;
+    /* Menggunakan Flexbox */
+    flex-direction: column;
+    /* Mengatur elemen dalam kolom */
+    justify-content: center;
+    /* Menyelaraskan konten secara vertikal */
+    align-items: center;
+    /* Menyelaraskan konten secara horizontal */
+    text-align: center;
+    /* Menyelaraskan teks di tengah */
+    padding: 20px;
+    /* Menambahkan padding jika diperlukan */
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-areas:
+      "job-title"
+      "company-name"
+      "current-status"
+      "job-vacancy-link";
+    grid-template-columns: 100%;
+  }
+
+  .illustration-text {
+    font-size: 40px;
+  }
+
+  .illustration-text>span {
+    font-size: 40px;
+    color: #16A249;
+  }
+
+}
